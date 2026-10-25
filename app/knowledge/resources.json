@@ -1,0 +1,576 @@
+[
+  {
+    "title": "Python setup and execution \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "python-setup-and-execution",
+    "verified": true
+  },
+  {
+    "title": "Variables and basic types \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "variables-and-basic-types",
+    "verified": true
+  },
+  {
+    "title": "Expressions and operators \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "expressions-and-operators",
+    "verified": true
+  },
+  {
+    "title": "Strings and formatting \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "strings-and-formatting",
+    "verified": true
+  },
+  {
+    "title": "Lists and tuples \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "lists-and-tuples",
+    "verified": true
+  },
+  {
+    "title": "Dictionaries and sets \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "dictionaries-and-sets",
+    "verified": true
+  },
+  {
+    "title": "Conditionals \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "conditionals",
+    "verified": true
+  },
+  {
+    "title": "Loops and iteration \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "loops-and-iteration",
+    "verified": true
+  },
+  {
+    "title": "Functions \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "functions",
+    "verified": true
+  },
+  {
+    "title": "Comprehensions \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "comprehensions",
+    "verified": true
+  },
+  {
+    "title": "Modules and packages \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "modules-and-packages",
+    "verified": true
+  },
+  {
+    "title": "Exceptions \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "exceptions",
+    "verified": true
+  },
+  {
+    "title": "File I/O and paths \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "file-i-o-and-paths",
+    "verified": true
+  },
+  {
+    "title": "Object-oriented programming \u2014 official learning reference",
+    "url": "https://docs.python.org/3/tutorial/",
+    "type": "documentation",
+    "topic_id": "object-oriented-programming",
+    "verified": true
+  },
+  {
+    "title": "Iterators and generators \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "iterators-and-generators",
+    "verified": true
+  },
+  {
+    "title": "Decorators \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "decorators",
+    "verified": true
+  },
+  {
+    "title": "Type hints \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "type-hints",
+    "verified": true
+  },
+  {
+    "title": "Dataclasses and data modeling \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "dataclasses-and-data-modeling",
+    "verified": true
+  },
+  {
+    "title": "Testing with pytest \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "testing-with-pytest",
+    "verified": true
+  },
+  {
+    "title": "Standard library essentials \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "standard-library-essentials",
+    "verified": true
+  },
+  {
+    "title": "Context managers \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "context-managers",
+    "verified": true
+  },
+  {
+    "title": "Concurrency basics \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "concurrency-basics",
+    "verified": true
+  },
+  {
+    "title": "Packaging and environments \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "packaging-and-environments",
+    "verified": true
+  },
+  {
+    "title": "Performance and profiling \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "performance-and-profiling",
+    "verified": true
+  },
+  {
+    "title": "Python project capstone \u2014 official learning reference",
+    "url": "https://docs.python.org/3/library/",
+    "type": "documentation",
+    "topic_id": "python-project-capstone",
+    "verified": true
+  },
+  {
+    "title": "Complexity analysis \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "complexity-analysis",
+    "verified": true
+  },
+  {
+    "title": "Arrays and strings \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "arrays-and-strings",
+    "verified": true
+  },
+  {
+    "title": "Hash tables \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "hash-tables",
+    "verified": true
+  },
+  {
+    "title": "Two pointers and sliding windows \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "two-pointers-and-sliding-windows",
+    "verified": true
+  },
+  {
+    "title": "Linked lists \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "linked-lists",
+    "verified": true
+  },
+  {
+    "title": "Stacks and queues \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "stacks-and-queues",
+    "verified": true
+  },
+  {
+    "title": "Recursion \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "recursion",
+    "verified": true
+  },
+  {
+    "title": "Binary search \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "binary-search",
+    "verified": true
+  },
+  {
+    "title": "Sorting \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "sorting",
+    "verified": true
+  },
+  {
+    "title": "Trees and traversals \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "trees-and-traversals",
+    "verified": true
+  },
+  {
+    "title": "Binary search trees \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "binary-search-trees",
+    "verified": true
+  },
+  {
+    "title": "Heaps and priority queues \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "heaps-and-priority-queues",
+    "verified": true
+  },
+  {
+    "title": "Graphs and representations \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "graphs-and-representations",
+    "verified": true
+  },
+  {
+    "title": "Graph traversal \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "graph-traversal",
+    "verified": true
+  },
+  {
+    "title": "Topological sorting \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "topological-sorting",
+    "verified": true
+  },
+  {
+    "title": "Shortest paths \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "shortest-paths",
+    "verified": true
+  },
+  {
+    "title": "Disjoint set union \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "disjoint-set-union",
+    "verified": true
+  },
+  {
+    "title": "Greedy algorithms \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "greedy-algorithms",
+    "verified": true
+  },
+  {
+    "title": "Backtracking \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "backtracking",
+    "verified": true
+  },
+  {
+    "title": "Dynamic programming \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "dynamic-programming",
+    "verified": true
+  },
+  {
+    "title": "Knapsack and sequence DP \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "knapsack-and-sequence-dp",
+    "verified": true
+  },
+  {
+    "title": "Tries \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "tries",
+    "verified": true
+  },
+  {
+    "title": "Range query structures \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "range-query-structures",
+    "verified": true
+  },
+  {
+    "title": "Algorithmic problem solving \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "algorithmic-problem-solving",
+    "verified": true
+  },
+  {
+    "title": "DSA capstone \u2014 official learning reference",
+    "url": "https://algs4.cs.princeton.edu/home/",
+    "type": "documentation",
+    "topic_id": "dsa-capstone",
+    "verified": true
+  },
+  {
+    "title": "Python for data work \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "python-for-data-work",
+    "verified": true
+  },
+  {
+    "title": "NumPy arrays \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "numpy-arrays",
+    "verified": true
+  },
+  {
+    "title": "Pandas dataframes \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "pandas-dataframes",
+    "verified": true
+  },
+  {
+    "title": "Data cleaning \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "data-cleaning",
+    "verified": true
+  },
+  {
+    "title": "Exploratory data analysis \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "exploratory-data-analysis",
+    "verified": true
+  },
+  {
+    "title": "Probability and statistics \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "probability-and-statistics",
+    "verified": true
+  },
+  {
+    "title": "Linear algebra for ML \u2014 official learning reference",
+    "url": "https://numpy.org/doc/stable/user/",
+    "type": "documentation",
+    "topic_id": "linear-algebra-for-ml",
+    "verified": true
+  },
+  {
+    "title": "Train validation test splits \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "train-validation-test-splits",
+    "verified": true
+  },
+  {
+    "title": "Regression \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "regression",
+    "verified": true
+  },
+  {
+    "title": "Classification \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "classification",
+    "verified": true
+  },
+  {
+    "title": "Metrics and validation \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "metrics-and-validation",
+    "verified": true
+  },
+  {
+    "title": "Feature engineering \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "feature-engineering",
+    "verified": true
+  },
+  {
+    "title": "Decision trees and ensembles \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "decision-trees-and-ensembles",
+    "verified": true
+  },
+  {
+    "title": "Clustering \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "clustering",
+    "verified": true
+  },
+  {
+    "title": "Neural network basics \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "neural-network-basics",
+    "verified": true
+  },
+  {
+    "title": "ML project and responsible use \u2014 official learning reference",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "type": "documentation",
+    "topic_id": "ml-project-and-responsible-use",
+    "verified": true
+  },
+  {
+    "title": "How the web works \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "how-the-web-works",
+    "verified": true
+  },
+  {
+    "title": "HTML document structure \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "html-document-structure",
+    "verified": true
+  },
+  {
+    "title": "CSS fundamentals \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "css-fundamentals",
+    "verified": true
+  },
+  {
+    "title": "JavaScript fundamentals \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "javascript-fundamentals",
+    "verified": true
+  },
+  {
+    "title": "DOM and browser events \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "dom-and-browser-events",
+    "verified": true
+  },
+  {
+    "title": "HTTP requests and APIs \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "http-requests-and-apis",
+    "verified": true
+  },
+  {
+    "title": "Git and project workflow \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "git-and-project-workflow",
+    "verified": true
+  },
+  {
+    "title": "Accessibility and responsive design \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "accessibility-and-responsive-design",
+    "verified": true
+  },
+  {
+    "title": "Frontend application structure \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "frontend-application-structure",
+    "verified": true
+  },
+  {
+    "title": "Python web fundamentals \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "python-web-fundamentals",
+    "verified": true
+  },
+  {
+    "title": "Forms and validation \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "forms-and-validation",
+    "verified": true
+  },
+  {
+    "title": "Databases and SQL \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "databases-and-sql",
+    "verified": true
+  },
+  {
+    "title": "Authentication and security basics \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "authentication-and-security-basics",
+    "verified": true
+  },
+  {
+    "title": "Testing web applications \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "testing-web-applications",
+    "verified": true
+  },
+  {
+    "title": "Deployment basics \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "deployment-basics",
+    "verified": true
+  },
+  {
+    "title": "Web app capstone \u2014 official learning reference",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn",
+    "type": "documentation",
+    "topic_id": "web-app-capstone",
+    "verified": true
+  }
+]

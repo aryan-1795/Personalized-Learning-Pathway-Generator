@@ -1,0 +1,225 @@
+{
+  "subject": "web_development",
+  "topics": [
+    {
+      "id": "how-the-web-works",
+      "name": "How the web works",
+      "description": "Understand clients, servers, DNS, HTTP, and URLs.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "html-document-structure",
+      "name": "HTML document structure",
+      "description": "Create semantic pages with accessible markup.",
+      "prerequisites": [
+        "how-the-web-works"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "css-fundamentals",
+      "name": "CSS fundamentals",
+      "description": "Style layouts with selectors, box model, and responsive rules.",
+      "prerequisites": [
+        "html-document-structure"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "javascript-fundamentals",
+      "name": "JavaScript fundamentals",
+      "description": "Use values, functions, arrays, objects, and control flow.",
+      "prerequisites": [
+        "how-the-web-works"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 4,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "dom-and-browser-events",
+      "name": "DOM and browser events",
+      "description": "Update page content and respond to user actions.",
+      "prerequisites": [
+        "html-document-structure",
+        "javascript-fundamentals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "http-requests-and-apis",
+      "name": "HTTP requests and APIs",
+      "description": "Send requests, interpret status codes, and use JSON APIs.",
+      "prerequisites": [
+        "how-the-web-works",
+        "javascript-fundamentals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "git-and-project-workflow",
+      "name": "Git and project workflow",
+      "description": "Track changes, branch, and collaborate with version control.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "accessibility-and-responsive-design",
+      "name": "Accessibility and responsive design",
+      "description": "Build usable interfaces across devices and assistive technologies.",
+      "prerequisites": [
+        "css-fundamentals",
+        "dom-and-browser-events"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "frontend-application-structure",
+      "name": "Frontend application structure",
+      "description": "Organize modules, state, and browser-side features.",
+      "prerequisites": [
+        "javascript-fundamentals",
+        "dom-and-browser-events",
+        "http-requests-and-apis"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "python-web-fundamentals",
+      "name": "Python web fundamentals",
+      "description": "Build routes and templates with a lightweight Python framework.",
+      "prerequisites": [
+        "how-the-web-works"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "forms-and-validation",
+      "name": "Forms and validation",
+      "description": "Validate user input in browser and server code.",
+      "prerequisites": [
+        "http-requests-and-apis",
+        "python-web-fundamentals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "databases-and-sql",
+      "name": "Databases and SQL",
+      "description": "Model relational data and query it with SQL.",
+      "prerequisites": [
+        "python-web-fundamentals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 4,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "authentication-and-security-basics",
+      "name": "Authentication and security basics",
+      "description": "Understand sessions, password handling, and common web risks.",
+      "prerequisites": [
+        "forms-and-validation",
+        "databases-and-sql"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "testing-web-applications",
+      "name": "Testing web applications",
+      "description": "Test routes and interactive behavior with repeatable checks.",
+      "prerequisites": [
+        "frontend-application-structure",
+        "python-web-fundamentals",
+        "forms-and-validation"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "deployment-basics",
+      "name": "Deployment basics",
+      "description": "Configure and deploy a small application with environment settings.",
+      "prerequisites": [
+        "git-and-project-workflow",
+        "python-web-fundamentals",
+        "authentication-and-security-basics",
+        "testing-web-applications"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "web development"
+      ]
+    },
+    {
+      "id": "web-app-capstone",
+      "name": "Web app capstone",
+      "description": "Build a tested accessible app backed by a database and a documented API.",
+      "prerequisites": [
+        "accessibility-and-responsive-design",
+        "frontend-application-structure",
+        "databases-and-sql",
+        "testing-web-applications",
+        "deployment-basics"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 6,
+      "tags": [
+        "web development"
+      ]
+    }
+  ]
+}

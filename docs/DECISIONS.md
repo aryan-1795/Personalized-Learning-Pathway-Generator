@@ -19,3 +19,8 @@
 - **Decision:** Load Transformers and sentence-transformers only when their services are used, and keep downloaded artifacts outside version control.
 - **Alternatives:** Load models at Flask import/startup; require cloud inference.
 - **Why:** Health checks, tests, and deterministic fallback remain usable without model downloads or GPU hardware.
+
+## 0005 — Treat the curated knowledge files as validated application data
+- **Decision:** Store each subject as a JSON prerequisite DAG and maintain a separate resource allowlist; validate identifiers, edges, uniqueness, and cycles at load time with Pydantic v2.
+- **Alternatives:** Embed knowledge directly in Python; trust graph/resource JSON without validation.
+- **Why:** Curators can review content without changing code, while generation and retrieval can only use known topic IDs and catalog links.

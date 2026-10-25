@@ -1,0 +1,351 @@
+{
+  "subject": "python",
+  "topics": [
+    {
+      "id": "python-setup-and-execution",
+      "name": "Python setup and execution",
+      "description": "Install Python, run scripts, and use the interpreter.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "estimated_hours": 1,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "variables-and-basic-types",
+      "name": "Variables and basic types",
+      "description": "Bind names and work with numbers, strings, booleans, and None.",
+      "prerequisites": [
+        "python-setup-and-execution"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "expressions-and-operators",
+      "name": "Expressions and operators",
+      "description": "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "prerequisites": [
+        "variables-and-basic-types"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "strings-and-formatting",
+      "name": "Strings and formatting",
+      "description": "Index, slice, transform, and format text.",
+      "prerequisites": [
+        "variables-and-basic-types",
+        "expressions-and-operators"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "lists-and-tuples",
+      "name": "Lists and tuples",
+      "description": "Use ordered sequences and choose mutable or immutable data structures.",
+      "prerequisites": [
+        "variables-and-basic-types",
+        "strings-and-formatting"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "dictionaries-and-sets",
+      "name": "Dictionaries and sets",
+      "description": "Use hash-based mappings and unique collections.",
+      "prerequisites": [
+        "variables-and-basic-types",
+        "expressions-and-operators"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "conditionals",
+      "name": "Conditionals",
+      "description": "Branch with if, elif, and else.",
+      "prerequisites": [
+        "expressions-and-operators"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 1,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "loops-and-iteration",
+      "name": "Loops and iteration",
+      "description": "Use for and while loops, iteration protocols, and loop control.",
+      "prerequisites": [
+        "lists-and-tuples",
+        "conditionals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "functions",
+      "name": "Functions",
+      "description": "Define functions, parameters, return values, and scope.",
+      "prerequisites": [
+        "conditionals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "comprehensions",
+      "name": "Comprehensions",
+      "description": "Build lists, sets, and dictionaries concisely.",
+      "prerequisites": [
+        "dictionaries-and-sets",
+        "loops-and-iteration",
+        "functions"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "modules-and-packages",
+      "name": "Modules and packages",
+      "description": "Organize and import reusable Python code.",
+      "prerequisites": [
+        "functions"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "exceptions",
+      "name": "Exceptions",
+      "description": "Raise, handle, and define exceptions.",
+      "prerequisites": [
+        "functions"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "file-i-o-and-paths",
+      "name": "File I/O and paths",
+      "description": "Read and write files using context managers and pathlib.",
+      "prerequisites": [
+        "functions",
+        "exceptions"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "object-oriented-programming",
+      "name": "Object-oriented programming",
+      "description": "Model behavior with classes, instances, methods, and inheritance.",
+      "prerequisites": [
+        "functions",
+        "modules-and-packages"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "iterators-and-generators",
+      "name": "Iterators and generators",
+      "description": "Create lazy iteration with iterators and yield.",
+      "prerequisites": [
+        "loops-and-iteration",
+        "functions"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "decorators",
+      "name": "Decorators",
+      "description": "Wrap functions and understand decorator syntax.",
+      "prerequisites": [
+        "functions",
+        "iterators-and-generators"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "type-hints",
+      "name": "Type hints",
+      "description": "Annotate functions and data for static analysis.",
+      "prerequisites": [
+        "functions",
+        "modules-and-packages"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "dataclasses-and-data-modeling",
+      "name": "Dataclasses and data modeling",
+      "description": "Represent structured data with dataclasses and validation patterns.",
+      "prerequisites": [
+        "object-oriented-programming",
+        "type-hints"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "testing-with-pytest",
+      "name": "Testing with pytest",
+      "description": "Write unit tests, fixtures, and parameterized tests.",
+      "prerequisites": [
+        "functions",
+        "modules-and-packages",
+        "exceptions"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "standard-library-essentials",
+      "name": "Standard library essentials",
+      "description": "Use useful modules such as collections, datetime, and itertools.",
+      "prerequisites": [
+        "modules-and-packages",
+        "iterators-and-generators"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "context-managers",
+      "name": "Context managers",
+      "description": "Manage resources with with statements and context manager protocols.",
+      "prerequisites": [
+        "exceptions",
+        "object-oriented-programming"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "concurrency-basics",
+      "name": "Concurrency basics",
+      "description": "Choose threads, processes, or asyncio for concurrent tasks.",
+      "prerequisites": [
+        "iterators-and-generators",
+        "standard-library-essentials",
+        "context-managers"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 4,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "packaging-and-environments",
+      "name": "Packaging and environments",
+      "description": "Manage isolated environments, dependencies, and package metadata.",
+      "prerequisites": [
+        "modules-and-packages",
+        "type-hints"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "performance-and-profiling",
+      "name": "Performance and profiling",
+      "description": "Measure runtime and memory before optimizing Python code.",
+      "prerequisites": [
+        "iterators-and-generators",
+        "standard-library-essentials"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 3,
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "id": "python-project-capstone",
+      "name": "Python project capstone",
+      "description": "Combine tested modules, typed APIs, files, and packaging in a small project.",
+      "prerequisites": [
+        "testing-with-pytest",
+        "concurrency-basics",
+        "packaging-and-environments",
+        "performance-and-profiling"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 6,
+      "tags": [
+        "python"
+      ]
+    }
+  ]
+}

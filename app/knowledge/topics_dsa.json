@@ -1,0 +1,356 @@
+{
+  "subject": "dsa",
+  "topics": [
+    {
+      "id": "complexity-analysis",
+      "name": "Complexity analysis",
+      "description": "Estimate time and space complexity with asymptotic notation.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "arrays-and-strings",
+      "name": "Arrays and strings",
+      "description": "Traverse and transform indexed sequences.",
+      "prerequisites": [
+        "complexity-analysis"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "hash-tables",
+      "name": "Hash tables",
+      "description": "Use hashing for fast key lookup and frequency counting.",
+      "prerequisites": [
+        "arrays-and-strings"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "two-pointers-and-sliding-windows",
+      "name": "Two pointers and sliding windows",
+      "description": "Optimize sequence scans with moving indices and windows.",
+      "prerequisites": [
+        "arrays-and-strings",
+        "complexity-analysis"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "linked-lists",
+      "name": "Linked lists",
+      "description": "Implement node-based lists and pointer operations.",
+      "prerequisites": [
+        "complexity-analysis"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "stacks-and-queues",
+      "name": "Stacks and queues",
+      "description": "Use LIFO and FIFO structures and their applications.",
+      "prerequisites": [
+        "arrays-and-strings"
+      ],
+      "difficulty": 1,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion",
+      "description": "Solve problems by defining smaller subproblems.",
+      "prerequisites": [
+        "complexity-analysis"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "binary-search",
+      "name": "Binary search",
+      "description": "Search sorted ranges and reason about monotonic predicates.",
+      "prerequisites": [
+        "arrays-and-strings",
+        "complexity-analysis"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "sorting",
+      "name": "Sorting",
+      "description": "Compare comparison sorts and apply sorting libraries.",
+      "prerequisites": [
+        "complexity-analysis",
+        "arrays-and-strings"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "trees-and-traversals",
+      "name": "Trees and traversals",
+      "description": "Represent trees and perform DFS and BFS traversals.",
+      "prerequisites": [
+        "stacks-and-queues",
+        "recursion"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "binary-search-trees",
+      "name": "Binary search trees",
+      "description": "Maintain ordered data using tree invariants.",
+      "prerequisites": [
+        "trees-and-traversals",
+        "binary-search"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "heaps-and-priority-queues",
+      "name": "Heaps and priority queues",
+      "description": "Retrieve minimum or maximum elements efficiently.",
+      "prerequisites": [
+        "trees-and-traversals",
+        "complexity-analysis"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "graphs-and-representations",
+      "name": "Graphs and representations",
+      "description": "Model vertices and edges with adjacency structures.",
+      "prerequisites": [
+        "stacks-and-queues",
+        "recursion"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "graph-traversal",
+      "name": "Graph traversal",
+      "description": "Use BFS and DFS to explore connected structures.",
+      "prerequisites": [
+        "graphs-and-representations",
+        "trees-and-traversals"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "topological-sorting",
+      "name": "Topological sorting",
+      "description": "Order DAG vertices subject to prerequisite edges.",
+      "prerequisites": [
+        "graphs-and-representations",
+        "graph-traversal"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "shortest-paths",
+      "name": "Shortest paths",
+      "description": "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate.",
+      "prerequisites": [
+        "graphs-and-representations",
+        "graph-traversal",
+        "heaps-and-priority-queues"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "disjoint-set-union",
+      "name": "Disjoint set union",
+      "description": "Track connected components with union-find.",
+      "prerequisites": [
+        "graphs-and-representations",
+        "complexity-analysis"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "greedy-algorithms",
+      "name": "Greedy algorithms",
+      "description": "Make locally optimal choices and prove when they work.",
+      "prerequisites": [
+        "complexity-analysis",
+        "sorting"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "backtracking",
+      "name": "Backtracking",
+      "description": "Search a decision tree with pruning and undo operations.",
+      "prerequisites": [
+        "recursion",
+        "trees-and-traversals"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "dynamic-programming",
+      "name": "Dynamic programming",
+      "description": "Cache overlapping subproblems and define state transitions.",
+      "prerequisites": [
+        "recursion",
+        "complexity-analysis"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 5,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "knapsack-and-sequence-dp",
+      "name": "Knapsack and sequence DP",
+      "description": "Apply dynamic programming to resource and sequence problems.",
+      "prerequisites": [
+        "dynamic-programming"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 4,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "tries",
+      "name": "Tries",
+      "description": "Index strings by shared prefixes.",
+      "prerequisites": [
+        "hash-tables",
+        "trees-and-traversals"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 2,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "range-query-structures",
+      "name": "Range query structures",
+      "description": "Use Fenwick trees or segment trees for aggregate queries.",
+      "prerequisites": [
+        "arrays-and-strings",
+        "complexity-analysis",
+        "sorting"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 4,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "algorithmic-problem-solving",
+      "name": "Algorithmic problem solving",
+      "description": "Select patterns, prove correctness, and analyze tradeoffs.",
+      "prerequisites": [
+        "two-pointers-and-sliding-windows",
+        "binary-search",
+        "binary-search-trees",
+        "topological-sorting",
+        "shortest-paths",
+        "greedy-algorithms",
+        "backtracking",
+        "knapsack-and-sequence-dp"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 6,
+      "tags": [
+        "dsa"
+      ]
+    },
+    {
+      "id": "dsa-capstone",
+      "name": "DSA capstone",
+      "description": "Design and implement a solution using appropriate structures and analysis.",
+      "prerequisites": [
+        "algorithmic-problem-solving",
+        "disjoint-set-union",
+        "tries",
+        "range-query-structures"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 6,
+      "tags": [
+        "dsa"
+      ]
+    }
+  ]
+}

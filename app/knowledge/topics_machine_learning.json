@@ -1,0 +1,230 @@
+{
+  "subject": "machine_learning",
+  "topics": [
+    {
+      "id": "python-for-data-work",
+      "name": "Python for data work",
+      "description": "Use arrays, tables, and notebooks for data analysis.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "numpy-arrays",
+      "name": "NumPy arrays",
+      "description": "Work with vectorized numerical arrays and broadcasting.",
+      "prerequisites": [
+        "python-for-data-work"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "pandas-dataframes",
+      "name": "Pandas dataframes",
+      "description": "Load, inspect, transform, and join tabular data.",
+      "prerequisites": [
+        "python-for-data-work"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "data-cleaning",
+      "name": "Data cleaning",
+      "description": "Handle missing values, duplicates, outliers, and types.",
+      "prerequisites": [
+        "pandas-dataframes"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "exploratory-data-analysis",
+      "name": "Exploratory data analysis",
+      "description": "Summarize data and inspect distributions and relationships.",
+      "prerequisites": [
+        "numpy-arrays",
+        "pandas-dataframes",
+        "data-cleaning"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "probability-and-statistics",
+      "name": "Probability and statistics",
+      "description": "Use distributions, sampling, confidence, and hypothesis tests.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "estimated_hours": 5,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "linear-algebra-for-ml",
+      "name": "Linear algebra for ML",
+      "description": "Understand vectors, matrices, dot products, and norms.",
+      "prerequisites": [
+        "numpy-arrays"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 4,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "train-validation-test-splits",
+      "name": "Train validation test splits",
+      "description": "Separate data to estimate generalization without leakage.",
+      "prerequisites": [
+        "exploratory-data-analysis"
+      ],
+      "difficulty": 2,
+      "estimated_hours": 2,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "regression",
+      "name": "Regression",
+      "description": "Fit and evaluate linear and regularized regression models.",
+      "prerequisites": [
+        "probability-and-statistics",
+        "linear-algebra-for-ml",
+        "train-validation-test-splits"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "classification",
+      "name": "Classification",
+      "description": "Train classifiers and interpret decision boundaries.",
+      "prerequisites": [
+        "probability-and-statistics",
+        "linear-algebra-for-ml",
+        "train-validation-test-splits"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "metrics-and-validation",
+      "name": "Metrics and validation",
+      "description": "Choose metrics, cross-validation, and threshold strategies.",
+      "prerequisites": [
+        "train-validation-test-splits",
+        "regression",
+        "classification"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "feature-engineering",
+      "name": "Feature engineering",
+      "description": "Transform and encode input features using training-safe pipelines.",
+      "prerequisites": [
+        "data-cleaning",
+        "exploratory-data-analysis",
+        "train-validation-test-splits"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "decision-trees-and-ensembles",
+      "name": "Decision trees and ensembles",
+      "description": "Use tree models, random forests, and boosting.",
+      "prerequisites": [
+        "regression",
+        "classification",
+        "metrics-and-validation",
+        "feature-engineering"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 4,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "clustering",
+      "name": "Clustering",
+      "description": "Apply unsupervised methods and evaluate cluster structure.",
+      "prerequisites": [
+        "probability-and-statistics",
+        "linear-algebra-for-ml",
+        "exploratory-data-analysis"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 3,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "neural-network-basics",
+      "name": "Neural network basics",
+      "description": "Understand layers, activations, loss, and gradient descent.",
+      "prerequisites": [
+        "linear-algebra-for-ml",
+        "regression",
+        "classification"
+      ],
+      "difficulty": 3,
+      "estimated_hours": 5,
+      "tags": [
+        "machine learning"
+      ]
+    },
+    {
+      "id": "ml-project-and-responsible-use",
+      "name": "ML project and responsible use",
+      "description": "Build an end-to-end baseline and discuss limitations and responsible use.",
+      "prerequisites": [
+        "metrics-and-validation",
+        "feature-engineering",
+        "decision-trees-and-ensembles",
+        "clustering",
+        "neural-network-basics"
+      ],
+      "difficulty": 4,
+      "estimated_hours": 6,
+      "tags": [
+        "machine learning"
+      ]
+    }
+  ]
+}
