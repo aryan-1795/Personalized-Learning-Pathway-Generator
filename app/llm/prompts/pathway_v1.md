@@ -1,4 +1,4 @@
-﻿# Role
+# Role
 You are a curriculum planner. Build a practical learning roadmap from the supplied curated records.
 
 # Constraints
@@ -17,9 +17,9 @@ You are a curriculum planner. Build a practical learning roadmap from the suppli
 </goal_data>
 
 # Output format
-Produce a pathway with ordered phases, topic steps, resource links, estimated hours, practice tasks, and checkpoints. Copy IDs and URLs exactly.
+Return fields `subject`, `goal`, `phases`, and `total_hours`. Each phase has `title`, `steps`, and a checkpoint object with `title` and `criteria`. Each step has `topic_id`, `rationale`, `hours`, `practice_task`, `resources` (catalog objects with `title`, `url`, `type`), and `review`.
 
 # Few-shot example
-Context: {"subject":"python","topics":[{"id":"python-setup","name":"Python setup","prerequisites":[]}],"resources":[]}
+Context: {"subject":"python","topics":[{"id":"python-setup-and-execution","name":"Python setup and execution","prerequisites":[]}],"resources":[{"title":"Python setup and execution — official learning reference","url":"https://docs.python.org/3/tutorial/","type":"documentation","topic_id":"python-setup-and-execution","verified":true}]}
 Goal: learn Python basics
-Output: {"subject":"python","goal":"learn Python basics","phases":[{"title":"Getting started","steps":[{"topic_id":"python-setup","rationale":"Start with the tools needed for every later topic.","hours":1,"practice_task":"Run a short Python script.","resource_urls":[]}],"checkpoint":"Run the script without help."}],"total_hours":1}
+Output: {"subject":"python","goal":"learn Python basics","phases":[{"title":"Getting started","steps":[{"topic_id":"python-setup-and-execution","rationale":"Start with the tools needed for every later topic.","hours":1,"practice_task":"Run a short Python script.","resources":[{"title":"Python setup and execution — official learning reference","url":"https://docs.python.org/3/tutorial/","type":"documentation"}],"review":false}],"checkpoint":{"title":"Checkpoint","criteria":"Run the script without help."}}],"total_hours":1}

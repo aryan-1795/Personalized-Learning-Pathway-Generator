@@ -34,3 +34,8 @@
 - **Decision:** Keep `LLMProvider.generate` as the seam, load Transformers lazily for CPU inference, and replay queued outputs with a deterministic mock in tests.
 - **Alternatives:** Couple prompt/pipeline code to Transformers; call a paid hosted model; patch generation internals in each test.
 - **Why:** Provider substitution keeps orchestration testable and works without model downloads, network access, or paid credentials.
+
+## 0008 — Validate every generated pathway and cap repairs at two
+- **Decision:** Parse Pydantic output, check graph/resource/budget semantics, pass specific errors into no more than two repair calls, then use a prerequisite-first deterministic fallback. Cache only validated results by complete request/model/prompt identity.
+- **Alternatives:** Trust valid JSON; retry indefinitely; return partial invalid output; use a random fallback.
+- **Why:** Schema correctness alone cannot catch invented links or broken learning order, and bounded deterministic recovery keeps latency and behavior explainable.
