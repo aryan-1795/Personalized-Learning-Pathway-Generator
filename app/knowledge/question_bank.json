@@ -1,0 +1,2050 @@
+[
+  {
+    "id": "python_c1_q1",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "python-setup-and-execution",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Python setup and execution?",
+    "options": [
+      "Install Python, run scripts, and use the interpreter.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Index, slice, transform, and format text."
+    ],
+    "correct_index": 0,
+    "explanation": "Install Python, run scripts, and use the interpreter."
+  },
+  {
+    "id": "python_c1_q2",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "variables-and-basic-types",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Variables and basic types?",
+    "options": [
+      "Index, slice, transform, and format text.",
+      "Install Python, run scripts, and use the interpreter.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Bind names and work with numbers, strings, booleans, and None."
+    ],
+    "correct_index": 3,
+    "explanation": "Bind names and work with numbers, strings, booleans, and None."
+  },
+  {
+    "id": "python_c1_q3",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "expressions-and-operators",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Expressions and operators?",
+    "options": [
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Install Python, run scripts, and use the interpreter.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Index, slice, transform, and format text."
+    ],
+    "correct_index": 2,
+    "explanation": "Evaluate arithmetic, comparison, logical, and membership expressions."
+  },
+  {
+    "id": "python_c1_q4",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "strings-and-formatting",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Strings and formatting?",
+    "options": [
+      "Install Python, run scripts, and use the interpreter.",
+      "Index, slice, transform, and format text.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions."
+    ],
+    "correct_index": 1,
+    "explanation": "Index, slice, transform, and format text."
+  },
+  {
+    "id": "python_c1_q5",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "lists-and-tuples",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Lists and tuples?",
+    "options": [
+      "Use ordered sequences and choose mutable or immutable data structures.",
+      "Install Python, run scripts, and use the interpreter.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions."
+    ],
+    "correct_index": 0,
+    "explanation": "Use ordered sequences and choose mutable or immutable data structures."
+  },
+  {
+    "id": "python_c1_q6",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "dictionaries-and-sets",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Dictionaries and sets?",
+    "options": [
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Install Python, run scripts, and use the interpreter.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Use hash-based mappings and unique collections."
+    ],
+    "correct_index": 3,
+    "explanation": "Use hash-based mappings and unique collections."
+  },
+  {
+    "id": "python_c1_q7",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "python-setup-and-execution",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Python setup and execution?",
+    "options": [
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Install Python, run scripts, and use the interpreter.",
+      "Index, slice, transform, and format text."
+    ],
+    "correct_index": 2,
+    "explanation": "Install Python, run scripts, and use the interpreter."
+  },
+  {
+    "id": "python_c1_q8",
+    "subject": "python",
+    "topic_cluster": "python_cluster_1",
+    "topic_id": "variables-and-basic-types",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Variables and basic types?",
+    "options": [
+      "Install Python, run scripts, and use the interpreter.",
+      "Bind names and work with numbers, strings, booleans, and None.",
+      "Evaluate arithmetic, comparison, logical, and membership expressions.",
+      "Index, slice, transform, and format text."
+    ],
+    "correct_index": 1,
+    "explanation": "Bind names and work with numbers, strings, booleans, and None."
+  },
+  {
+    "id": "python_c2_q1",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "conditionals",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Conditionals?",
+    "options": [
+      "Branch with if, elif, and else.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Define functions, parameters, return values, and scope.",
+      "Build lists, sets, and dictionaries concisely."
+    ],
+    "correct_index": 0,
+    "explanation": "Branch with if, elif, and else."
+  },
+  {
+    "id": "python_c2_q2",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "loops-and-iteration",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Loops and iteration?",
+    "options": [
+      "Build lists, sets, and dictionaries concisely.",
+      "Branch with if, elif, and else.",
+      "Define functions, parameters, return values, and scope.",
+      "Use for and while loops, iteration protocols, and loop control."
+    ],
+    "correct_index": 3,
+    "explanation": "Use for and while loops, iteration protocols, and loop control."
+  },
+  {
+    "id": "python_c2_q3",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "functions",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Functions?",
+    "options": [
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Branch with if, elif, and else.",
+      "Define functions, parameters, return values, and scope.",
+      "Build lists, sets, and dictionaries concisely."
+    ],
+    "correct_index": 2,
+    "explanation": "Define functions, parameters, return values, and scope."
+  },
+  {
+    "id": "python_c2_q4",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "comprehensions",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Comprehensions?",
+    "options": [
+      "Branch with if, elif, and else.",
+      "Build lists, sets, and dictionaries concisely.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Define functions, parameters, return values, and scope."
+    ],
+    "correct_index": 1,
+    "explanation": "Build lists, sets, and dictionaries concisely."
+  },
+  {
+    "id": "python_c2_q5",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "modules-and-packages",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Modules and packages?",
+    "options": [
+      "Organize and import reusable Python code.",
+      "Branch with if, elif, and else.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Define functions, parameters, return values, and scope."
+    ],
+    "correct_index": 0,
+    "explanation": "Organize and import reusable Python code."
+  },
+  {
+    "id": "python_c2_q6",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "exceptions",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Exceptions?",
+    "options": [
+      "Define functions, parameters, return values, and scope.",
+      "Branch with if, elif, and else.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Raise, handle, and define exceptions."
+    ],
+    "correct_index": 3,
+    "explanation": "Raise, handle, and define exceptions."
+  },
+  {
+    "id": "python_c2_q7",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "conditionals",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Conditionals?",
+    "options": [
+      "Define functions, parameters, return values, and scope.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Branch with if, elif, and else.",
+      "Build lists, sets, and dictionaries concisely."
+    ],
+    "correct_index": 2,
+    "explanation": "Branch with if, elif, and else."
+  },
+  {
+    "id": "python_c2_q8",
+    "subject": "python",
+    "topic_cluster": "python_cluster_2",
+    "topic_id": "loops-and-iteration",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Loops and iteration?",
+    "options": [
+      "Branch with if, elif, and else.",
+      "Use for and while loops, iteration protocols, and loop control.",
+      "Define functions, parameters, return values, and scope.",
+      "Build lists, sets, and dictionaries concisely."
+    ],
+    "correct_index": 1,
+    "explanation": "Use for and while loops, iteration protocols, and loop control."
+  },
+  {
+    "id": "python_c3_q1",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "file-i-o-and-paths",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes File I/O and paths?",
+    "options": [
+      "Read and write files using context managers and pathlib.",
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Create lazy iteration with iterators and yield.",
+      "Wrap functions and understand decorator syntax."
+    ],
+    "correct_index": 0,
+    "explanation": "Read and write files using context managers and pathlib."
+  },
+  {
+    "id": "python_c3_q2",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "object-oriented-programming",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Object-oriented programming?",
+    "options": [
+      "Wrap functions and understand decorator syntax.",
+      "Read and write files using context managers and pathlib.",
+      "Create lazy iteration with iterators and yield.",
+      "Model behavior with classes, instances, methods, and inheritance."
+    ],
+    "correct_index": 3,
+    "explanation": "Model behavior with classes, instances, methods, and inheritance."
+  },
+  {
+    "id": "python_c3_q3",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "iterators-and-generators",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Iterators and generators?",
+    "options": [
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Read and write files using context managers and pathlib.",
+      "Create lazy iteration with iterators and yield.",
+      "Wrap functions and understand decorator syntax."
+    ],
+    "correct_index": 2,
+    "explanation": "Create lazy iteration with iterators and yield."
+  },
+  {
+    "id": "python_c3_q4",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "decorators",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Decorators?",
+    "options": [
+      "Read and write files using context managers and pathlib.",
+      "Wrap functions and understand decorator syntax.",
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Create lazy iteration with iterators and yield."
+    ],
+    "correct_index": 1,
+    "explanation": "Wrap functions and understand decorator syntax."
+  },
+  {
+    "id": "python_c3_q5",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "type-hints",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Type hints?",
+    "options": [
+      "Annotate functions and data for static analysis.",
+      "Read and write files using context managers and pathlib.",
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Create lazy iteration with iterators and yield."
+    ],
+    "correct_index": 0,
+    "explanation": "Annotate functions and data for static analysis."
+  },
+  {
+    "id": "python_c3_q6",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "dataclasses-and-data-modeling",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Dataclasses and data modeling?",
+    "options": [
+      "Create lazy iteration with iterators and yield.",
+      "Read and write files using context managers and pathlib.",
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Represent structured data with dataclasses and validation patterns."
+    ],
+    "correct_index": 3,
+    "explanation": "Represent structured data with dataclasses and validation patterns."
+  },
+  {
+    "id": "python_c3_q7",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "testing-with-pytest",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Testing with pytest?",
+    "options": [
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Read and write files using context managers and pathlib.",
+      "Write unit tests, fixtures, and parameterized tests.",
+      "Create lazy iteration with iterators and yield."
+    ],
+    "correct_index": 2,
+    "explanation": "Write unit tests, fixtures, and parameterized tests."
+  },
+  {
+    "id": "python_c3_q8",
+    "subject": "python",
+    "topic_cluster": "python_cluster_3",
+    "topic_id": "file-i-o-and-paths",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes File I/O and paths?",
+    "options": [
+      "Model behavior with classes, instances, methods, and inheritance.",
+      "Read and write files using context managers and pathlib.",
+      "Create lazy iteration with iterators and yield.",
+      "Wrap functions and understand decorator syntax."
+    ],
+    "correct_index": 1,
+    "explanation": "Read and write files using context managers and pathlib."
+  },
+  {
+    "id": "python_c4_q1",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "standard-library-essentials",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Standard library essentials?",
+    "options": [
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage resources with with statements and context manager protocols.",
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Manage isolated environments, dependencies, and package metadata."
+    ],
+    "correct_index": 0,
+    "explanation": "Use useful modules such as collections, datetime, and itertools."
+  },
+  {
+    "id": "python_c4_q2",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "context-managers",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Context managers?",
+    "options": [
+      "Manage isolated environments, dependencies, and package metadata.",
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Manage resources with with statements and context manager protocols."
+    ],
+    "correct_index": 3,
+    "explanation": "Manage resources with with statements and context manager protocols."
+  },
+  {
+    "id": "python_c4_q3",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "concurrency-basics",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Concurrency basics?",
+    "options": [
+      "Manage resources with with statements and context manager protocols.",
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Manage isolated environments, dependencies, and package metadata."
+    ],
+    "correct_index": 2,
+    "explanation": "Choose threads, processes, or asyncio for concurrent tasks."
+  },
+  {
+    "id": "python_c4_q4",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "packaging-and-environments",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Packaging and environments?",
+    "options": [
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage isolated environments, dependencies, and package metadata.",
+      "Manage resources with with statements and context manager protocols.",
+      "Choose threads, processes, or asyncio for concurrent tasks."
+    ],
+    "correct_index": 1,
+    "explanation": "Manage isolated environments, dependencies, and package metadata."
+  },
+  {
+    "id": "python_c4_q5",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "performance-and-profiling",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Performance and profiling?",
+    "options": [
+      "Measure runtime and memory before optimizing Python code.",
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage resources with with statements and context manager protocols.",
+      "Choose threads, processes, or asyncio for concurrent tasks."
+    ],
+    "correct_index": 0,
+    "explanation": "Measure runtime and memory before optimizing Python code."
+  },
+  {
+    "id": "python_c4_q6",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "python-project-capstone",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Python project capstone?",
+    "options": [
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage resources with with statements and context manager protocols.",
+      "Combine tested modules, typed APIs, files, and packaging in a small project."
+    ],
+    "correct_index": 3,
+    "explanation": "Combine tested modules, typed APIs, files, and packaging in a small project."
+  },
+  {
+    "id": "python_c4_q7",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "standard-library-essentials",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Standard library essentials?",
+    "options": [
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Manage resources with with statements and context manager protocols.",
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage isolated environments, dependencies, and package metadata."
+    ],
+    "correct_index": 2,
+    "explanation": "Use useful modules such as collections, datetime, and itertools."
+  },
+  {
+    "id": "python_c4_q8",
+    "subject": "python",
+    "topic_cluster": "python_cluster_4",
+    "topic_id": "context-managers",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Context managers?",
+    "options": [
+      "Use useful modules such as collections, datetime, and itertools.",
+      "Manage resources with with statements and context manager protocols.",
+      "Choose threads, processes, or asyncio for concurrent tasks.",
+      "Manage isolated environments, dependencies, and package metadata."
+    ],
+    "correct_index": 1,
+    "explanation": "Manage resources with with statements and context manager protocols."
+  },
+  {
+    "id": "dsa_c1_q1",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "complexity-analysis",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Complexity analysis?",
+    "options": [
+      "Estimate time and space complexity with asymptotic notation.",
+      "Traverse and transform indexed sequences.",
+      "Use hashing for fast key lookup and frequency counting.",
+      "Optimize sequence scans with moving indices and windows."
+    ],
+    "correct_index": 0,
+    "explanation": "Estimate time and space complexity with asymptotic notation."
+  },
+  {
+    "id": "dsa_c1_q2",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "arrays-and-strings",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Arrays and strings?",
+    "options": [
+      "Optimize sequence scans with moving indices and windows.",
+      "Estimate time and space complexity with asymptotic notation.",
+      "Use hashing for fast key lookup and frequency counting.",
+      "Traverse and transform indexed sequences."
+    ],
+    "correct_index": 3,
+    "explanation": "Traverse and transform indexed sequences."
+  },
+  {
+    "id": "dsa_c1_q3",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "hash-tables",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Hash tables?",
+    "options": [
+      "Traverse and transform indexed sequences.",
+      "Estimate time and space complexity with asymptotic notation.",
+      "Use hashing for fast key lookup and frequency counting.",
+      "Optimize sequence scans with moving indices and windows."
+    ],
+    "correct_index": 2,
+    "explanation": "Use hashing for fast key lookup and frequency counting."
+  },
+  {
+    "id": "dsa_c1_q4",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "two-pointers-and-sliding-windows",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Two pointers and sliding windows?",
+    "options": [
+      "Estimate time and space complexity with asymptotic notation.",
+      "Optimize sequence scans with moving indices and windows.",
+      "Traverse and transform indexed sequences.",
+      "Use hashing for fast key lookup and frequency counting."
+    ],
+    "correct_index": 1,
+    "explanation": "Optimize sequence scans with moving indices and windows."
+  },
+  {
+    "id": "dsa_c1_q5",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "linked-lists",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Linked lists?",
+    "options": [
+      "Implement node-based lists and pointer operations.",
+      "Estimate time and space complexity with asymptotic notation.",
+      "Traverse and transform indexed sequences.",
+      "Use hashing for fast key lookup and frequency counting."
+    ],
+    "correct_index": 0,
+    "explanation": "Implement node-based lists and pointer operations."
+  },
+  {
+    "id": "dsa_c1_q6",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "stacks-and-queues",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Stacks and queues?",
+    "options": [
+      "Use hashing for fast key lookup and frequency counting.",
+      "Estimate time and space complexity with asymptotic notation.",
+      "Traverse and transform indexed sequences.",
+      "Use LIFO and FIFO structures and their applications."
+    ],
+    "correct_index": 3,
+    "explanation": "Use LIFO and FIFO structures and their applications."
+  },
+  {
+    "id": "dsa_c1_q7",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "complexity-analysis",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Complexity analysis?",
+    "options": [
+      "Use hashing for fast key lookup and frequency counting.",
+      "Traverse and transform indexed sequences.",
+      "Estimate time and space complexity with asymptotic notation.",
+      "Optimize sequence scans with moving indices and windows."
+    ],
+    "correct_index": 2,
+    "explanation": "Estimate time and space complexity with asymptotic notation."
+  },
+  {
+    "id": "dsa_c1_q8",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_1",
+    "topic_id": "arrays-and-strings",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Arrays and strings?",
+    "options": [
+      "Estimate time and space complexity with asymptotic notation.",
+      "Traverse and transform indexed sequences.",
+      "Use hashing for fast key lookup and frequency counting.",
+      "Optimize sequence scans with moving indices and windows."
+    ],
+    "correct_index": 1,
+    "explanation": "Traverse and transform indexed sequences."
+  },
+  {
+    "id": "dsa_c2_q1",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "recursion",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Recursion?",
+    "options": [
+      "Solve problems by defining smaller subproblems.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Compare comparison sorts and apply sorting libraries.",
+      "Represent trees and perform DFS and BFS traversals."
+    ],
+    "correct_index": 0,
+    "explanation": "Solve problems by defining smaller subproblems."
+  },
+  {
+    "id": "dsa_c2_q2",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "binary-search",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Binary search?",
+    "options": [
+      "Represent trees and perform DFS and BFS traversals.",
+      "Solve problems by defining smaller subproblems.",
+      "Compare comparison sorts and apply sorting libraries.",
+      "Search sorted ranges and reason about monotonic predicates."
+    ],
+    "correct_index": 3,
+    "explanation": "Search sorted ranges and reason about monotonic predicates."
+  },
+  {
+    "id": "dsa_c2_q3",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "sorting",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Sorting?",
+    "options": [
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Solve problems by defining smaller subproblems.",
+      "Compare comparison sorts and apply sorting libraries.",
+      "Represent trees and perform DFS and BFS traversals."
+    ],
+    "correct_index": 2,
+    "explanation": "Compare comparison sorts and apply sorting libraries."
+  },
+  {
+    "id": "dsa_c2_q4",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "trees-and-traversals",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Trees and traversals?",
+    "options": [
+      "Solve problems by defining smaller subproblems.",
+      "Represent trees and perform DFS and BFS traversals.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Compare comparison sorts and apply sorting libraries."
+    ],
+    "correct_index": 1,
+    "explanation": "Represent trees and perform DFS and BFS traversals."
+  },
+  {
+    "id": "dsa_c2_q5",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "binary-search-trees",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Binary search trees?",
+    "options": [
+      "Maintain ordered data using tree invariants.",
+      "Solve problems by defining smaller subproblems.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Compare comparison sorts and apply sorting libraries."
+    ],
+    "correct_index": 0,
+    "explanation": "Maintain ordered data using tree invariants."
+  },
+  {
+    "id": "dsa_c2_q6",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "heaps-and-priority-queues",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Heaps and priority queues?",
+    "options": [
+      "Compare comparison sorts and apply sorting libraries.",
+      "Solve problems by defining smaller subproblems.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Retrieve minimum or maximum elements efficiently."
+    ],
+    "correct_index": 3,
+    "explanation": "Retrieve minimum or maximum elements efficiently."
+  },
+  {
+    "id": "dsa_c2_q7",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "recursion",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Recursion?",
+    "options": [
+      "Compare comparison sorts and apply sorting libraries.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Solve problems by defining smaller subproblems.",
+      "Represent trees and perform DFS and BFS traversals."
+    ],
+    "correct_index": 2,
+    "explanation": "Solve problems by defining smaller subproblems."
+  },
+  {
+    "id": "dsa_c2_q8",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_2",
+    "topic_id": "binary-search",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Binary search?",
+    "options": [
+      "Solve problems by defining smaller subproblems.",
+      "Search sorted ranges and reason about monotonic predicates.",
+      "Compare comparison sorts and apply sorting libraries.",
+      "Represent trees and perform DFS and BFS traversals."
+    ],
+    "correct_index": 1,
+    "explanation": "Search sorted ranges and reason about monotonic predicates."
+  },
+  {
+    "id": "dsa_c3_q1",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "graphs-and-representations",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Graphs and representations?",
+    "options": [
+      "Model vertices and edges with adjacency structures.",
+      "Use BFS and DFS to explore connected structures.",
+      "Order DAG vertices subject to prerequisite edges.",
+      "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate."
+    ],
+    "correct_index": 0,
+    "explanation": "Model vertices and edges with adjacency structures."
+  },
+  {
+    "id": "dsa_c3_q2",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "graph-traversal",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Graph traversal?",
+    "options": [
+      "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate.",
+      "Model vertices and edges with adjacency structures.",
+      "Order DAG vertices subject to prerequisite edges.",
+      "Use BFS and DFS to explore connected structures."
+    ],
+    "correct_index": 3,
+    "explanation": "Use BFS and DFS to explore connected structures."
+  },
+  {
+    "id": "dsa_c3_q3",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "topological-sorting",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Topological sorting?",
+    "options": [
+      "Use BFS and DFS to explore connected structures.",
+      "Model vertices and edges with adjacency structures.",
+      "Order DAG vertices subject to prerequisite edges.",
+      "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate."
+    ],
+    "correct_index": 2,
+    "explanation": "Order DAG vertices subject to prerequisite edges."
+  },
+  {
+    "id": "dsa_c3_q4",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "shortest-paths",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Shortest paths?",
+    "options": [
+      "Model vertices and edges with adjacency structures.",
+      "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate.",
+      "Use BFS and DFS to explore connected structures.",
+      "Order DAG vertices subject to prerequisite edges."
+    ],
+    "correct_index": 1,
+    "explanation": "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate."
+  },
+  {
+    "id": "dsa_c3_q5",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "disjoint-set-union",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Disjoint set union?",
+    "options": [
+      "Track connected components with union-find.",
+      "Model vertices and edges with adjacency structures.",
+      "Use BFS and DFS to explore connected structures.",
+      "Order DAG vertices subject to prerequisite edges."
+    ],
+    "correct_index": 0,
+    "explanation": "Track connected components with union-find."
+  },
+  {
+    "id": "dsa_c3_q6",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "greedy-algorithms",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Greedy algorithms?",
+    "options": [
+      "Order DAG vertices subject to prerequisite edges.",
+      "Model vertices and edges with adjacency structures.",
+      "Use BFS and DFS to explore connected structures.",
+      "Make locally optimal choices and prove when they work."
+    ],
+    "correct_index": 3,
+    "explanation": "Make locally optimal choices and prove when they work."
+  },
+  {
+    "id": "dsa_c3_q7",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "backtracking",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Backtracking?",
+    "options": [
+      "Use BFS and DFS to explore connected structures.",
+      "Model vertices and edges with adjacency structures.",
+      "Search a decision tree with pruning and undo operations.",
+      "Order DAG vertices subject to prerequisite edges."
+    ],
+    "correct_index": 2,
+    "explanation": "Search a decision tree with pruning and undo operations."
+  },
+  {
+    "id": "dsa_c3_q8",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_3",
+    "topic_id": "graphs-and-representations",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Graphs and representations?",
+    "options": [
+      "Use BFS and DFS to explore connected structures.",
+      "Model vertices and edges with adjacency structures.",
+      "Order DAG vertices subject to prerequisite edges.",
+      "Compute paths with BFS, Dijkstra, or Bellman-Ford as appropriate."
+    ],
+    "correct_index": 1,
+    "explanation": "Model vertices and edges with adjacency structures."
+  },
+  {
+    "id": "dsa_c4_q1",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "dynamic-programming",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Dynamic programming?",
+    "options": [
+      "Cache overlapping subproblems and define state transitions.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Index strings by shared prefixes.",
+      "Use Fenwick trees or segment trees for aggregate queries."
+    ],
+    "correct_index": 0,
+    "explanation": "Cache overlapping subproblems and define state transitions."
+  },
+  {
+    "id": "dsa_c4_q2",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "knapsack-and-sequence-dp",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Knapsack and sequence DP?",
+    "options": [
+      "Use Fenwick trees or segment trees for aggregate queries.",
+      "Cache overlapping subproblems and define state transitions.",
+      "Index strings by shared prefixes.",
+      "Apply dynamic programming to resource and sequence problems."
+    ],
+    "correct_index": 3,
+    "explanation": "Apply dynamic programming to resource and sequence problems."
+  },
+  {
+    "id": "dsa_c4_q3",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "tries",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Tries?",
+    "options": [
+      "Apply dynamic programming to resource and sequence problems.",
+      "Cache overlapping subproblems and define state transitions.",
+      "Index strings by shared prefixes.",
+      "Use Fenwick trees or segment trees for aggregate queries."
+    ],
+    "correct_index": 2,
+    "explanation": "Index strings by shared prefixes."
+  },
+  {
+    "id": "dsa_c4_q4",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "range-query-structures",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Range query structures?",
+    "options": [
+      "Cache overlapping subproblems and define state transitions.",
+      "Use Fenwick trees or segment trees for aggregate queries.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Index strings by shared prefixes."
+    ],
+    "correct_index": 1,
+    "explanation": "Use Fenwick trees or segment trees for aggregate queries."
+  },
+  {
+    "id": "dsa_c4_q5",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "algorithmic-problem-solving",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Algorithmic problem solving?",
+    "options": [
+      "Select patterns, prove correctness, and analyze tradeoffs.",
+      "Cache overlapping subproblems and define state transitions.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Index strings by shared prefixes."
+    ],
+    "correct_index": 0,
+    "explanation": "Select patterns, prove correctness, and analyze tradeoffs."
+  },
+  {
+    "id": "dsa_c4_q6",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "dsa-capstone",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes DSA capstone?",
+    "options": [
+      "Index strings by shared prefixes.",
+      "Cache overlapping subproblems and define state transitions.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Design and implement a solution using appropriate structures and analysis."
+    ],
+    "correct_index": 3,
+    "explanation": "Design and implement a solution using appropriate structures and analysis."
+  },
+  {
+    "id": "dsa_c4_q7",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "dynamic-programming",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Dynamic programming?",
+    "options": [
+      "Index strings by shared prefixes.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Cache overlapping subproblems and define state transitions.",
+      "Use Fenwick trees or segment trees for aggregate queries."
+    ],
+    "correct_index": 2,
+    "explanation": "Cache overlapping subproblems and define state transitions."
+  },
+  {
+    "id": "dsa_c4_q8",
+    "subject": "dsa",
+    "topic_cluster": "dsa_cluster_4",
+    "topic_id": "knapsack-and-sequence-dp",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Knapsack and sequence DP?",
+    "options": [
+      "Cache overlapping subproblems and define state transitions.",
+      "Apply dynamic programming to resource and sequence problems.",
+      "Index strings by shared prefixes.",
+      "Use Fenwick trees or segment trees for aggregate queries."
+    ],
+    "correct_index": 1,
+    "explanation": "Apply dynamic programming to resource and sequence problems."
+  },
+  {
+    "id": "machine_learning_c1_q1",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "python-for-data-work",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Python for data work?",
+    "options": [
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Load, inspect, transform, and join tabular data.",
+      "Handle missing values, duplicates, outliers, and types."
+    ],
+    "correct_index": 0,
+    "explanation": "Use arrays, tables, and notebooks for data analysis."
+  },
+  {
+    "id": "machine_learning_c1_q2",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "numpy-arrays",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes NumPy arrays?",
+    "options": [
+      "Handle missing values, duplicates, outliers, and types.",
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Load, inspect, transform, and join tabular data.",
+      "Work with vectorized numerical arrays and broadcasting."
+    ],
+    "correct_index": 3,
+    "explanation": "Work with vectorized numerical arrays and broadcasting."
+  },
+  {
+    "id": "machine_learning_c1_q3",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "pandas-dataframes",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Pandas dataframes?",
+    "options": [
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Load, inspect, transform, and join tabular data.",
+      "Handle missing values, duplicates, outliers, and types."
+    ],
+    "correct_index": 2,
+    "explanation": "Load, inspect, transform, and join tabular data."
+  },
+  {
+    "id": "machine_learning_c1_q4",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "data-cleaning",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Data cleaning?",
+    "options": [
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Handle missing values, duplicates, outliers, and types.",
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Load, inspect, transform, and join tabular data."
+    ],
+    "correct_index": 1,
+    "explanation": "Handle missing values, duplicates, outliers, and types."
+  },
+  {
+    "id": "machine_learning_c1_q5",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "python-for-data-work",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Python for data work?",
+    "options": [
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Load, inspect, transform, and join tabular data.",
+      "Handle missing values, duplicates, outliers, and types."
+    ],
+    "correct_index": 0,
+    "explanation": "Use arrays, tables, and notebooks for data analysis."
+  },
+  {
+    "id": "machine_learning_c1_q6",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "numpy-arrays",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes NumPy arrays?",
+    "options": [
+      "Handle missing values, duplicates, outliers, and types.",
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Load, inspect, transform, and join tabular data.",
+      "Work with vectorized numerical arrays and broadcasting."
+    ],
+    "correct_index": 3,
+    "explanation": "Work with vectorized numerical arrays and broadcasting."
+  },
+  {
+    "id": "machine_learning_c1_q7",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "pandas-dataframes",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Pandas dataframes?",
+    "options": [
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Load, inspect, transform, and join tabular data.",
+      "Handle missing values, duplicates, outliers, and types."
+    ],
+    "correct_index": 2,
+    "explanation": "Load, inspect, transform, and join tabular data."
+  },
+  {
+    "id": "machine_learning_c1_q8",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_1",
+    "topic_id": "data-cleaning",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Data cleaning?",
+    "options": [
+      "Use arrays, tables, and notebooks for data analysis.",
+      "Handle missing values, duplicates, outliers, and types.",
+      "Work with vectorized numerical arrays and broadcasting.",
+      "Load, inspect, transform, and join tabular data."
+    ],
+    "correct_index": 1,
+    "explanation": "Handle missing values, duplicates, outliers, and types."
+  },
+  {
+    "id": "machine_learning_c2_q1",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "exploratory-data-analysis",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Exploratory data analysis?",
+    "options": [
+      "Summarize data and inspect distributions and relationships.",
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Separate data to estimate generalization without leakage."
+    ],
+    "correct_index": 0,
+    "explanation": "Summarize data and inspect distributions and relationships."
+  },
+  {
+    "id": "machine_learning_c2_q2",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "probability-and-statistics",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Probability and statistics?",
+    "options": [
+      "Separate data to estimate generalization without leakage.",
+      "Summarize data and inspect distributions and relationships.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Use distributions, sampling, confidence, and hypothesis tests."
+    ],
+    "correct_index": 3,
+    "explanation": "Use distributions, sampling, confidence, and hypothesis tests."
+  },
+  {
+    "id": "machine_learning_c2_q3",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "linear-algebra-for-ml",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Linear algebra for ML?",
+    "options": [
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Summarize data and inspect distributions and relationships.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Separate data to estimate generalization without leakage."
+    ],
+    "correct_index": 2,
+    "explanation": "Understand vectors, matrices, dot products, and norms."
+  },
+  {
+    "id": "machine_learning_c2_q4",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "train-validation-test-splits",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Train validation test splits?",
+    "options": [
+      "Summarize data and inspect distributions and relationships.",
+      "Separate data to estimate generalization without leakage.",
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Understand vectors, matrices, dot products, and norms."
+    ],
+    "correct_index": 1,
+    "explanation": "Separate data to estimate generalization without leakage."
+  },
+  {
+    "id": "machine_learning_c2_q5",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "exploratory-data-analysis",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Exploratory data analysis?",
+    "options": [
+      "Summarize data and inspect distributions and relationships.",
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Separate data to estimate generalization without leakage."
+    ],
+    "correct_index": 0,
+    "explanation": "Summarize data and inspect distributions and relationships."
+  },
+  {
+    "id": "machine_learning_c2_q6",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "probability-and-statistics",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Probability and statistics?",
+    "options": [
+      "Separate data to estimate generalization without leakage.",
+      "Summarize data and inspect distributions and relationships.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Use distributions, sampling, confidence, and hypothesis tests."
+    ],
+    "correct_index": 3,
+    "explanation": "Use distributions, sampling, confidence, and hypothesis tests."
+  },
+  {
+    "id": "machine_learning_c2_q7",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "linear-algebra-for-ml",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Linear algebra for ML?",
+    "options": [
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Summarize data and inspect distributions and relationships.",
+      "Understand vectors, matrices, dot products, and norms.",
+      "Separate data to estimate generalization without leakage."
+    ],
+    "correct_index": 2,
+    "explanation": "Understand vectors, matrices, dot products, and norms."
+  },
+  {
+    "id": "machine_learning_c2_q8",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_2",
+    "topic_id": "train-validation-test-splits",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Train validation test splits?",
+    "options": [
+      "Summarize data and inspect distributions and relationships.",
+      "Separate data to estimate generalization without leakage.",
+      "Use distributions, sampling, confidence, and hypothesis tests.",
+      "Understand vectors, matrices, dot products, and norms."
+    ],
+    "correct_index": 1,
+    "explanation": "Separate data to estimate generalization without leakage."
+  },
+  {
+    "id": "machine_learning_c3_q1",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "regression",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Regression?",
+    "options": [
+      "Fit and evaluate linear and regularized regression models.",
+      "Train classifiers and interpret decision boundaries.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Transform and encode input features using training-safe pipelines."
+    ],
+    "correct_index": 0,
+    "explanation": "Fit and evaluate linear and regularized regression models."
+  },
+  {
+    "id": "machine_learning_c3_q2",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "classification",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Classification?",
+    "options": [
+      "Transform and encode input features using training-safe pipelines.",
+      "Fit and evaluate linear and regularized regression models.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Train classifiers and interpret decision boundaries."
+    ],
+    "correct_index": 3,
+    "explanation": "Train classifiers and interpret decision boundaries."
+  },
+  {
+    "id": "machine_learning_c3_q3",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "metrics-and-validation",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Metrics and validation?",
+    "options": [
+      "Train classifiers and interpret decision boundaries.",
+      "Fit and evaluate linear and regularized regression models.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Transform and encode input features using training-safe pipelines."
+    ],
+    "correct_index": 2,
+    "explanation": "Choose metrics, cross-validation, and threshold strategies."
+  },
+  {
+    "id": "machine_learning_c3_q4",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "feature-engineering",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Feature engineering?",
+    "options": [
+      "Fit and evaluate linear and regularized regression models.",
+      "Transform and encode input features using training-safe pipelines.",
+      "Train classifiers and interpret decision boundaries.",
+      "Choose metrics, cross-validation, and threshold strategies."
+    ],
+    "correct_index": 1,
+    "explanation": "Transform and encode input features using training-safe pipelines."
+  },
+  {
+    "id": "machine_learning_c3_q5",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "regression",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Regression?",
+    "options": [
+      "Fit and evaluate linear and regularized regression models.",
+      "Train classifiers and interpret decision boundaries.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Transform and encode input features using training-safe pipelines."
+    ],
+    "correct_index": 0,
+    "explanation": "Fit and evaluate linear and regularized regression models."
+  },
+  {
+    "id": "machine_learning_c3_q6",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "classification",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Classification?",
+    "options": [
+      "Transform and encode input features using training-safe pipelines.",
+      "Fit and evaluate linear and regularized regression models.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Train classifiers and interpret decision boundaries."
+    ],
+    "correct_index": 3,
+    "explanation": "Train classifiers and interpret decision boundaries."
+  },
+  {
+    "id": "machine_learning_c3_q7",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "metrics-and-validation",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Metrics and validation?",
+    "options": [
+      "Train classifiers and interpret decision boundaries.",
+      "Fit and evaluate linear and regularized regression models.",
+      "Choose metrics, cross-validation, and threshold strategies.",
+      "Transform and encode input features using training-safe pipelines."
+    ],
+    "correct_index": 2,
+    "explanation": "Choose metrics, cross-validation, and threshold strategies."
+  },
+  {
+    "id": "machine_learning_c3_q8",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_3",
+    "topic_id": "feature-engineering",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Feature engineering?",
+    "options": [
+      "Fit and evaluate linear and regularized regression models.",
+      "Transform and encode input features using training-safe pipelines.",
+      "Train classifiers and interpret decision boundaries.",
+      "Choose metrics, cross-validation, and threshold strategies."
+    ],
+    "correct_index": 1,
+    "explanation": "Transform and encode input features using training-safe pipelines."
+  },
+  {
+    "id": "machine_learning_c4_q1",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "decision-trees-and-ensembles",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Decision trees and ensembles?",
+    "options": [
+      "Use tree models, random forests, and boosting.",
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Build an end-to-end baseline and discuss limitations and responsible use."
+    ],
+    "correct_index": 0,
+    "explanation": "Use tree models, random forests, and boosting."
+  },
+  {
+    "id": "machine_learning_c4_q2",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "clustering",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Clustering?",
+    "options": [
+      "Build an end-to-end baseline and discuss limitations and responsible use.",
+      "Use tree models, random forests, and boosting.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Apply unsupervised methods and evaluate cluster structure."
+    ],
+    "correct_index": 3,
+    "explanation": "Apply unsupervised methods and evaluate cluster structure."
+  },
+  {
+    "id": "machine_learning_c4_q3",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "neural-network-basics",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Neural network basics?",
+    "options": [
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Use tree models, random forests, and boosting.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Build an end-to-end baseline and discuss limitations and responsible use."
+    ],
+    "correct_index": 2,
+    "explanation": "Understand layers, activations, loss, and gradient descent."
+  },
+  {
+    "id": "machine_learning_c4_q4",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "ml-project-and-responsible-use",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes ML project and responsible use?",
+    "options": [
+      "Use tree models, random forests, and boosting.",
+      "Build an end-to-end baseline and discuss limitations and responsible use.",
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Understand layers, activations, loss, and gradient descent."
+    ],
+    "correct_index": 1,
+    "explanation": "Build an end-to-end baseline and discuss limitations and responsible use."
+  },
+  {
+    "id": "machine_learning_c4_q5",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "decision-trees-and-ensembles",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Decision trees and ensembles?",
+    "options": [
+      "Use tree models, random forests, and boosting.",
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Build an end-to-end baseline and discuss limitations and responsible use."
+    ],
+    "correct_index": 0,
+    "explanation": "Use tree models, random forests, and boosting."
+  },
+  {
+    "id": "machine_learning_c4_q6",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "clustering",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Clustering?",
+    "options": [
+      "Build an end-to-end baseline and discuss limitations and responsible use.",
+      "Use tree models, random forests, and boosting.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Apply unsupervised methods and evaluate cluster structure."
+    ],
+    "correct_index": 3,
+    "explanation": "Apply unsupervised methods and evaluate cluster structure."
+  },
+  {
+    "id": "machine_learning_c4_q7",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "neural-network-basics",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Neural network basics?",
+    "options": [
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Use tree models, random forests, and boosting.",
+      "Understand layers, activations, loss, and gradient descent.",
+      "Build an end-to-end baseline and discuss limitations and responsible use."
+    ],
+    "correct_index": 2,
+    "explanation": "Understand layers, activations, loss, and gradient descent."
+  },
+  {
+    "id": "machine_learning_c4_q8",
+    "subject": "machine_learning",
+    "topic_cluster": "machine_learning_cluster_4",
+    "topic_id": "ml-project-and-responsible-use",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes ML project and responsible use?",
+    "options": [
+      "Use tree models, random forests, and boosting.",
+      "Build an end-to-end baseline and discuss limitations and responsible use.",
+      "Apply unsupervised methods and evaluate cluster structure.",
+      "Understand layers, activations, loss, and gradient descent."
+    ],
+    "correct_index": 1,
+    "explanation": "Build an end-to-end baseline and discuss limitations and responsible use."
+  },
+  {
+    "id": "web_development_c1_q1",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "how-the-web-works",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes How the web works?",
+    "options": [
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Create semantic pages with accessible markup.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Use values, functions, arrays, objects, and control flow."
+    ],
+    "correct_index": 0,
+    "explanation": "Understand clients, servers, DNS, HTTP, and URLs."
+  },
+  {
+    "id": "web_development_c1_q2",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "html-document-structure",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes HTML document structure?",
+    "options": [
+      "Use values, functions, arrays, objects, and control flow.",
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Create semantic pages with accessible markup."
+    ],
+    "correct_index": 3,
+    "explanation": "Create semantic pages with accessible markup."
+  },
+  {
+    "id": "web_development_c1_q3",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "css-fundamentals",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes CSS fundamentals?",
+    "options": [
+      "Create semantic pages with accessible markup.",
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Use values, functions, arrays, objects, and control flow."
+    ],
+    "correct_index": 2,
+    "explanation": "Style layouts with selectors, box model, and responsive rules."
+  },
+  {
+    "id": "web_development_c1_q4",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "javascript-fundamentals",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes JavaScript fundamentals?",
+    "options": [
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Use values, functions, arrays, objects, and control flow.",
+      "Create semantic pages with accessible markup.",
+      "Style layouts with selectors, box model, and responsive rules."
+    ],
+    "correct_index": 1,
+    "explanation": "Use values, functions, arrays, objects, and control flow."
+  },
+  {
+    "id": "web_development_c1_q5",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "how-the-web-works",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes How the web works?",
+    "options": [
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Create semantic pages with accessible markup.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Use values, functions, arrays, objects, and control flow."
+    ],
+    "correct_index": 0,
+    "explanation": "Understand clients, servers, DNS, HTTP, and URLs."
+  },
+  {
+    "id": "web_development_c1_q6",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "html-document-structure",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes HTML document structure?",
+    "options": [
+      "Use values, functions, arrays, objects, and control flow.",
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Create semantic pages with accessible markup."
+    ],
+    "correct_index": 3,
+    "explanation": "Create semantic pages with accessible markup."
+  },
+  {
+    "id": "web_development_c1_q7",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "css-fundamentals",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes CSS fundamentals?",
+    "options": [
+      "Create semantic pages with accessible markup.",
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Style layouts with selectors, box model, and responsive rules.",
+      "Use values, functions, arrays, objects, and control flow."
+    ],
+    "correct_index": 2,
+    "explanation": "Style layouts with selectors, box model, and responsive rules."
+  },
+  {
+    "id": "web_development_c1_q8",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_1",
+    "topic_id": "javascript-fundamentals",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes JavaScript fundamentals?",
+    "options": [
+      "Understand clients, servers, DNS, HTTP, and URLs.",
+      "Use values, functions, arrays, objects, and control flow.",
+      "Create semantic pages with accessible markup.",
+      "Style layouts with selectors, box model, and responsive rules."
+    ],
+    "correct_index": 1,
+    "explanation": "Use values, functions, arrays, objects, and control flow."
+  },
+  {
+    "id": "web_development_c2_q1",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "dom-and-browser-events",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes DOM and browser events?",
+    "options": [
+      "Update page content and respond to user actions.",
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Track changes, branch, and collaborate with version control.",
+      "Build usable interfaces across devices and assistive technologies."
+    ],
+    "correct_index": 0,
+    "explanation": "Update page content and respond to user actions."
+  },
+  {
+    "id": "web_development_c2_q2",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "http-requests-and-apis",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes HTTP requests and APIs?",
+    "options": [
+      "Build usable interfaces across devices and assistive technologies.",
+      "Update page content and respond to user actions.",
+      "Track changes, branch, and collaborate with version control.",
+      "Send requests, interpret status codes, and use JSON APIs."
+    ],
+    "correct_index": 3,
+    "explanation": "Send requests, interpret status codes, and use JSON APIs."
+  },
+  {
+    "id": "web_development_c2_q3",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "git-and-project-workflow",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Git and project workflow?",
+    "options": [
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Update page content and respond to user actions.",
+      "Track changes, branch, and collaborate with version control.",
+      "Build usable interfaces across devices and assistive technologies."
+    ],
+    "correct_index": 2,
+    "explanation": "Track changes, branch, and collaborate with version control."
+  },
+  {
+    "id": "web_development_c2_q4",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "accessibility-and-responsive-design",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Accessibility and responsive design?",
+    "options": [
+      "Update page content and respond to user actions.",
+      "Build usable interfaces across devices and assistive technologies.",
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Track changes, branch, and collaborate with version control."
+    ],
+    "correct_index": 1,
+    "explanation": "Build usable interfaces across devices and assistive technologies."
+  },
+  {
+    "id": "web_development_c2_q5",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "dom-and-browser-events",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes DOM and browser events?",
+    "options": [
+      "Update page content and respond to user actions.",
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Track changes, branch, and collaborate with version control.",
+      "Build usable interfaces across devices and assistive technologies."
+    ],
+    "correct_index": 0,
+    "explanation": "Update page content and respond to user actions."
+  },
+  {
+    "id": "web_development_c2_q6",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "http-requests-and-apis",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes HTTP requests and APIs?",
+    "options": [
+      "Build usable interfaces across devices and assistive technologies.",
+      "Update page content and respond to user actions.",
+      "Track changes, branch, and collaborate with version control.",
+      "Send requests, interpret status codes, and use JSON APIs."
+    ],
+    "correct_index": 3,
+    "explanation": "Send requests, interpret status codes, and use JSON APIs."
+  },
+  {
+    "id": "web_development_c2_q7",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "git-and-project-workflow",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Git and project workflow?",
+    "options": [
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Update page content and respond to user actions.",
+      "Track changes, branch, and collaborate with version control.",
+      "Build usable interfaces across devices and assistive technologies."
+    ],
+    "correct_index": 2,
+    "explanation": "Track changes, branch, and collaborate with version control."
+  },
+  {
+    "id": "web_development_c2_q8",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_2",
+    "topic_id": "accessibility-and-responsive-design",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Accessibility and responsive design?",
+    "options": [
+      "Update page content and respond to user actions.",
+      "Build usable interfaces across devices and assistive technologies.",
+      "Send requests, interpret status codes, and use JSON APIs.",
+      "Track changes, branch, and collaborate with version control."
+    ],
+    "correct_index": 1,
+    "explanation": "Build usable interfaces across devices and assistive technologies."
+  },
+  {
+    "id": "web_development_c3_q1",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "frontend-application-structure",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Frontend application structure?",
+    "options": [
+      "Organize modules, state, and browser-side features.",
+      "Build routes and templates with a lightweight Python framework.",
+      "Validate user input in browser and server code.",
+      "Model relational data and query it with SQL."
+    ],
+    "correct_index": 0,
+    "explanation": "Organize modules, state, and browser-side features."
+  },
+  {
+    "id": "web_development_c3_q2",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "python-web-fundamentals",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Python web fundamentals?",
+    "options": [
+      "Model relational data and query it with SQL.",
+      "Organize modules, state, and browser-side features.",
+      "Validate user input in browser and server code.",
+      "Build routes and templates with a lightweight Python framework."
+    ],
+    "correct_index": 3,
+    "explanation": "Build routes and templates with a lightweight Python framework."
+  },
+  {
+    "id": "web_development_c3_q3",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "forms-and-validation",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Forms and validation?",
+    "options": [
+      "Build routes and templates with a lightweight Python framework.",
+      "Organize modules, state, and browser-side features.",
+      "Validate user input in browser and server code.",
+      "Model relational data and query it with SQL."
+    ],
+    "correct_index": 2,
+    "explanation": "Validate user input in browser and server code."
+  },
+  {
+    "id": "web_development_c3_q4",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "databases-and-sql",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Databases and SQL?",
+    "options": [
+      "Organize modules, state, and browser-side features.",
+      "Model relational data and query it with SQL.",
+      "Build routes and templates with a lightweight Python framework.",
+      "Validate user input in browser and server code."
+    ],
+    "correct_index": 1,
+    "explanation": "Model relational data and query it with SQL."
+  },
+  {
+    "id": "web_development_c3_q5",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "frontend-application-structure",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Frontend application structure?",
+    "options": [
+      "Organize modules, state, and browser-side features.",
+      "Build routes and templates with a lightweight Python framework.",
+      "Validate user input in browser and server code.",
+      "Model relational data and query it with SQL."
+    ],
+    "correct_index": 0,
+    "explanation": "Organize modules, state, and browser-side features."
+  },
+  {
+    "id": "web_development_c3_q6",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "python-web-fundamentals",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Python web fundamentals?",
+    "options": [
+      "Model relational data and query it with SQL.",
+      "Organize modules, state, and browser-side features.",
+      "Validate user input in browser and server code.",
+      "Build routes and templates with a lightweight Python framework."
+    ],
+    "correct_index": 3,
+    "explanation": "Build routes and templates with a lightweight Python framework."
+  },
+  {
+    "id": "web_development_c3_q7",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "forms-and-validation",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Forms and validation?",
+    "options": [
+      "Build routes and templates with a lightweight Python framework.",
+      "Organize modules, state, and browser-side features.",
+      "Validate user input in browser and server code.",
+      "Model relational data and query it with SQL."
+    ],
+    "correct_index": 2,
+    "explanation": "Validate user input in browser and server code."
+  },
+  {
+    "id": "web_development_c3_q8",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_3",
+    "topic_id": "databases-and-sql",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Databases and SQL?",
+    "options": [
+      "Organize modules, state, and browser-side features.",
+      "Model relational data and query it with SQL.",
+      "Build routes and templates with a lightweight Python framework.",
+      "Validate user input in browser and server code."
+    ],
+    "correct_index": 1,
+    "explanation": "Model relational data and query it with SQL."
+  },
+  {
+    "id": "web_development_c4_q1",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "authentication-and-security-basics",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Authentication and security basics?",
+    "options": [
+      "Understand sessions, password handling, and common web risks.",
+      "Test routes and interactive behavior with repeatable checks.",
+      "Configure and deploy a small application with environment settings.",
+      "Build a tested accessible app backed by a database and a documented API."
+    ],
+    "correct_index": 0,
+    "explanation": "Understand sessions, password handling, and common web risks."
+  },
+  {
+    "id": "web_development_c4_q2",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "testing-web-applications",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Testing web applications?",
+    "options": [
+      "Build a tested accessible app backed by a database and a documented API.",
+      "Understand sessions, password handling, and common web risks.",
+      "Configure and deploy a small application with environment settings.",
+      "Test routes and interactive behavior with repeatable checks."
+    ],
+    "correct_index": 3,
+    "explanation": "Test routes and interactive behavior with repeatable checks."
+  },
+  {
+    "id": "web_development_c4_q3",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "deployment-basics",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Deployment basics?",
+    "options": [
+      "Test routes and interactive behavior with repeatable checks.",
+      "Understand sessions, password handling, and common web risks.",
+      "Configure and deploy a small application with environment settings.",
+      "Build a tested accessible app backed by a database and a documented API."
+    ],
+    "correct_index": 2,
+    "explanation": "Configure and deploy a small application with environment settings."
+  },
+  {
+    "id": "web_development_c4_q4",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "web-app-capstone",
+    "difficulty": 4,
+    "prompt": "Which statement best characterizes Web app capstone?",
+    "options": [
+      "Understand sessions, password handling, and common web risks.",
+      "Build a tested accessible app backed by a database and a documented API.",
+      "Test routes and interactive behavior with repeatable checks.",
+      "Configure and deploy a small application with environment settings."
+    ],
+    "correct_index": 1,
+    "explanation": "Build a tested accessible app backed by a database and a documented API."
+  },
+  {
+    "id": "web_development_c4_q5",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "authentication-and-security-basics",
+    "difficulty": 5,
+    "prompt": "Which statement best characterizes Authentication and security basics?",
+    "options": [
+      "Understand sessions, password handling, and common web risks.",
+      "Test routes and interactive behavior with repeatable checks.",
+      "Configure and deploy a small application with environment settings.",
+      "Build a tested accessible app backed by a database and a documented API."
+    ],
+    "correct_index": 0,
+    "explanation": "Understand sessions, password handling, and common web risks."
+  },
+  {
+    "id": "web_development_c4_q6",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "testing-web-applications",
+    "difficulty": 1,
+    "prompt": "Which statement best characterizes Testing web applications?",
+    "options": [
+      "Build a tested accessible app backed by a database and a documented API.",
+      "Understand sessions, password handling, and common web risks.",
+      "Configure and deploy a small application with environment settings.",
+      "Test routes and interactive behavior with repeatable checks."
+    ],
+    "correct_index": 3,
+    "explanation": "Test routes and interactive behavior with repeatable checks."
+  },
+  {
+    "id": "web_development_c4_q7",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "deployment-basics",
+    "difficulty": 2,
+    "prompt": "Which statement best characterizes Deployment basics?",
+    "options": [
+      "Test routes and interactive behavior with repeatable checks.",
+      "Understand sessions, password handling, and common web risks.",
+      "Configure and deploy a small application with environment settings.",
+      "Build a tested accessible app backed by a database and a documented API."
+    ],
+    "correct_index": 2,
+    "explanation": "Configure and deploy a small application with environment settings."
+  },
+  {
+    "id": "web_development_c4_q8",
+    "subject": "web_development",
+    "topic_cluster": "web_development_cluster_4",
+    "topic_id": "web-app-capstone",
+    "difficulty": 3,
+    "prompt": "Which statement best characterizes Web app capstone?",
+    "options": [
+      "Understand sessions, password handling, and common web risks.",
+      "Build a tested accessible app backed by a database and a documented API.",
+      "Test routes and interactive behavior with repeatable checks.",
+      "Configure and deploy a small application with environment settings."
+    ],
+    "correct_index": 1,
+    "explanation": "Build a tested accessible app backed by a database and a documented API."
+  }
+]

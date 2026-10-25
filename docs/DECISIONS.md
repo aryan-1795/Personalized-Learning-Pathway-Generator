@@ -24,3 +24,8 @@
 - **Decision:** Store each subject as a JSON prerequisite DAG and maintain a separate resource allowlist; validate identifiers, edges, uniqueness, and cycles at load time with Pydantic v2.
 - **Alternatives:** Embed knowledge directly in Python; trust graph/resource JSON without validation.
 - **Why:** Curators can review content without changing code, while generation and retrieval can only use known topic IDs and catalog links.
+
+## 0006 — Use a balanced staircase with cluster-level mastery smoothing
+- **Decision:** Start at difficulty 3, step one level based on each answer, balance questions across four subject clusters, stop after eight questions with two observations per cluster or at twelve, and use a Beta(1,1) prior for mastery.
+- **Alternatives:** Fixed-length quizzes; report zero mastery for unasked topics; use a complex IRT model without calibrated item data.
+- **Why:** This is deterministic, explainable, and gives a usable estimate for every topic while clearly documenting that the initial quiz is diagnostic rather than psychometrically calibrated.
