@@ -39,3 +39,8 @@
 - **Decision:** Parse Pydantic output, check graph/resource/budget semantics, pass specific errors into no more than two repair calls, then use a prerequisite-first deterministic fallback. Cache only validated results by complete request/model/prompt identity.
 - **Alternatives:** Trust valid JSON; retry indefinitely; return partial invalid output; use a random fallback.
 - **Why:** Schema correctness alone cannot catch invented links or broken learning order, and bounded deterministic recovery keeps latency and behavior explainable.
+
+## 0009 — Keep retrieval local, cached, and degradable
+- **Decision:** Rank curated topic/resource documents with MiniLM embeddings cached by subject/content/model; if model loading or encoding fails, use deterministic lexical scoring over the same records.
+- **Alternatives:** Require network-backed search; fail pathway generation when embeddings are absent; retrieve from arbitrary URLs.
+- **Why:** Grounding stays bounded to reviewed data while the demo and tests remain usable offline and on CPU-only systems.

@@ -8,6 +8,7 @@ import re
 from dataclasses import dataclass
 
 from app.knowledge.loader import Resource, Subject, Topic, load_resources, load_topic_graph
+from app.retrieval.service import retrieve_resources
 
 WORD = re.compile(r"[a-z0-9]+")
 
@@ -64,15 +65,32 @@ def build_context(
         raise ValueError(f"Mastery contains unknown topic IDs: {sorted(unknown_mastery_ids)}")
     clean_goal = sanitize_goal(goal)
     goal_words = set(WORD.findall(clean_goal.lower()))
+    weak_topic_ids = [topic.id for topic in graph.topics if mastery.get(topic.id, 0.5) < 0.5]
+    retrieval = retrieve_resources(subject, clean_goal, weak_topic_ids, top_k=12)
+    scores = {candidate.topic.id: candidate.score for candidate in retrieval.topics}
     ranked = sorted(
-        graph.topics,
-        key=lambda topic: (-_score_topic(topic, goal_words, mastery), topic.id),
+        (by_id[topic_id] for topic_id in scores),
+        key=lambda topic: (-scores[topic.id], -_score_topic(topic, goal_words, mastery), topic.id),
     )
     selected: set[str] = set()
     resources_by_topic: dict[str, list[Resource]] = {}
+    retrieved_resource_ids = {
+        (candidate.resource.topic_id, candidate.resource.url)
+        for candidate in retrieval.resources
+    }
     for resource in load_resources():
-        if resource.topic_id in by_id:
+        if resource.topic_id in by_id and (
+            (resource.topic_id, resource.url) in retrieved_resource_ids
+            or not retrieved_resource_ids
+        ):
             resources_by_topic.setdefault(resource.topic_id, []).append(resource)
+    for topic_id in scores:
+        if topic_id not in resources_by_topic:
+            resources_by_topic[topic_id] = [
+                resource
+                for resource in load_resources()
+                if resource.topic_id == topic_id
+            ]
 
     def encode(topic_ids: set[str]) -> tuple[str, set[str]]:
         ids_in_graph_order = [topic.id for topic in graph.topics if topic.id in topic_ids]
