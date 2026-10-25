@@ -236,6 +236,9 @@ class PathwayGenerator:
         )
         base_prompt = render_prompt(self.prompt_version, context.text, sanitize_goal(request.goal))
         validation_errors: list[str] = []
+        first_try_schema_valid = False
+        first_try_semantic_valid = False
+        first_try_validation_errors: list[str] = []
         source = "fallback"
         result_pathway: Pathway | None = None
         retries_used = 0
@@ -257,6 +260,8 @@ class PathwayGenerator:
                 )
             except Exception as exc:
                 validation_errors.append(f"provider error: {type(exc).__name__}: {exc}")
+                if attempt == 0:
+                    first_try_validation_errors = list(validation_errors)
                 break
             try:
                 candidate = Pathway.model_validate_json(output)
@@ -265,12 +270,19 @@ class PathwayGenerator:
                     "schema/JSON validation failed: "
                     f"{exc.errors(include_url=False)}"
                 ]
+                if attempt == 0:
+                    first_try_validation_errors = list(validation_errors)
                 retries_used = min(attempt + 1, self.max_retries)
                 continue
+            if attempt == 0:
+                first_try_schema_valid = True
             if candidate.subject != request.subject:
                 errors = ["pathway subject does not match request subject"]
             else:
                 errors = validate_pathway(candidate, request.mastery, request.budget_hours)
+            if attempt == 0:
+                first_try_validation_errors = list(errors)
+                first_try_semantic_valid = not errors
             if errors:
                 validation_errors = errors
                 retries_used = min(attempt + 1, self.max_retries)
@@ -299,6 +311,9 @@ class PathwayGenerator:
                 latency_ms=round(elapsed, 3),
                 retries=retries_used,
                 validation_errors=validation_errors,
+                first_try_schema_valid=first_try_schema_valid,
+                first_try_semantic_valid=first_try_semantic_valid,
+                first_try_validation_errors=first_try_validation_errors,
             ),
         )
         self._cache[key] = result

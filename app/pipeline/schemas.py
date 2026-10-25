@@ -72,6 +72,9 @@ class GenerationMetadata(BaseModel):
     retries: int = Field(ge=0)
     validation_errors: list[str] = Field(default_factory=list)
     cache_hit: bool = False
+    first_try_schema_valid: bool = False
+    first_try_semantic_valid: bool = False
+    first_try_validation_errors: list[str] = Field(default_factory=list)
 
 
 class PathwayResult(BaseModel):

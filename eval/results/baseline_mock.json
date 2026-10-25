@@ -1,0 +1,473 @@
+{
+  "created_at_utc": "2026-10-25T04:21:46.551160+00:00",
+  "evaluation_mode": "mock",
+  "profile_set": "app\\eval\\profiles.json",
+  "analysis_note": "Mock fixtures exercise pipeline success, repair, and fallback; they are not evidence of real model quality.",
+  "markdown_table": "| Provider / prompt | Schema valid | Repair | Fallback | Prereq violations | Hallucinations | Budget compliant | Mean latency ms |\n|---|---:|---:|---:|---:|---:|---:|---:|\n| mock-fixture / pathway_v1 | 70.0% | 20.0% | 20.0% | 0.0% | 10.0% | 100.0% | 2.633 |\n| mock-fixture / pathway_v2 | 70.0% | 20.0% | 20.0% | 0.0% | 10.0% | 100.0% | 2.247 |",
+  "comparisons": [
+    {
+      "provider": "mock-fixture",
+      "prompt_version": "pathway_v1",
+      "profile_count": 20,
+      "metrics": {
+        "schema_validity_rate_first_try": 0.7,
+        "repair_rate": 0.2,
+        "fallback_rate": 0.2,
+        "prerequisite_order_violation_rate_first_try": 0.0,
+        "hallucinated_topic_or_url_rate_first_try": 0.1,
+        "time_budget_compliance_rate_final": 1.0,
+        "mean_latency_ms": 2.633
+      },
+      "outcomes": [
+        {
+          "profile_id": "python-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 3.369,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 3.73,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 3.644,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 2', 'input': '{malformed', 'ctx': {'error': 'key must be a string at line 1 column 2'}}]"
+          ],
+          "retries": 1,
+          "latency_ms": 3.298,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 2.476,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.099,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.454,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.091,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "unknown topic IDs: ['invented-topic-from-fixture']"
+          ],
+          "retries": 1,
+          "latency_ms": 2.574,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 2.452,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.25,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.36,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.178,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 2', 'input': '{malformed', 'ctx': {'error': 'key must be a string at line 1 column 2'}}]"
+          ],
+          "retries": 1,
+          "latency_ms": 2.616,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 3.743,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.642,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.396,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.076,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "unknown topic IDs: ['invented-topic-from-fixture']"
+          ],
+          "retries": 1,
+          "latency_ms": 2.222,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 1.991,
+          "time_budget_compliant": true
+        }
+      ]
+    },
+    {
+      "provider": "mock-fixture",
+      "prompt_version": "pathway_v2",
+      "profile_count": 20,
+      "metrics": {
+        "schema_validity_rate_first_try": 0.7,
+        "repair_rate": 0.2,
+        "fallback_rate": 0.2,
+        "prerequisite_order_violation_rate_first_try": 0.0,
+        "hallucinated_topic_or_url_rate_first_try": 0.1,
+        "time_budget_compliance_rate_final": 1.0,
+        "mean_latency_ms": 2.247
+      },
+      "outcomes": [
+        {
+          "profile_id": "python-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.199,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.366,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.236,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 2', 'input': '{malformed', 'ctx': {'error': 'key must be a string at line 1 column 2'}}]"
+          ],
+          "retries": 1,
+          "latency_ms": 2.675,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "python-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 2.719,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.097,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.202,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.349,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "unknown topic IDs: ['invented-topic-from-fixture']"
+          ],
+          "retries": 1,
+          "latency_ms": 2.82,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "dsa-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 2.304,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 1.856,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.147,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 1.869,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 2', 'input': '{malformed', 'ctx': {'error': 'key must be a string at line 1 column 2'}}]"
+          ],
+          "retries": 1,
+          "latency_ms": 2.06,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "machine_learning-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 2.116,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-01",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 1.998,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-02",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.513,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-03",
+          "source": "llm_ok",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": true,
+          "first_try_validation_errors": [],
+          "retries": 0,
+          "latency_ms": 2.252,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-04",
+          "source": "llm_repaired",
+          "first_try_schema_valid": true,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "unknown topic IDs: ['invented-topic-from-fixture']"
+          ],
+          "retries": 1,
+          "latency_ms": 2.202,
+          "time_budget_compliant": true
+        },
+        {
+          "profile_id": "web_development-05",
+          "source": "fallback",
+          "first_try_schema_valid": false,
+          "first_try_semantic_valid": false,
+          "first_try_validation_errors": [
+            "schema/JSON validation failed: [{'type': 'missing', 'loc': ('subject',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('goal',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('phases',), 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ('total_hours',), 'msg': 'Field required', 'input': {}}]"
+          ],
+          "retries": 2,
+          "latency_ms": 1.955,
+          "time_budget_compliant": true
+        }
+      ]
+    }
+  ]
+}

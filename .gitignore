@@ -12,4 +12,5 @@ htmlcov/
 .cache/
 models/
 eval/results/*.json
+!eval/results/baseline_mock.json
 !eval/results/.gitkeep
