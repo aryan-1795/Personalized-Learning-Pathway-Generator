@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a grounded, personalized learning plan.">
+  <title>Learning Pathway Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true">LP</div>
+    <div>
+      <p class="eyebrow">LEARN WITH A PLAN</p>
+      <h1>Learning Pathway Generator</h1>
+    </div>
+  </header>
+  <main class="layout">
+    <section class="intro-panel">
+      <p class="eyebrow">YOUR NEXT STEP, MADE CLEAR</p>
+      <h2>Build a learning plan that meets you where you are.</h2>
+      <p>Take a short knowledge check, tell us what you want to accomplish, and get a practical roadmap grounded in trusted resources.</p>
+      <div class="trust-note"><span aria-hidden="true">✓</span> Transparent sources and validation</div>
+    </section>
+
+    <section class="workspace" aria-live="polite">
+      <section class="card" id="setup-card">
+        <div class="step-label"><span>01</span> CHOOSE A SUBJECT</div>
+        <label for="subject">What would you like to learn?</label>
+        <select id="subject" name="subject">
+          <option value="python">Python</option>
+          <option value="dsa">Data Structures &amp; Algorithms</option>
+          <option value="machine_learning">Machine Learning basics</option>
+          <option value="web_development">Web Development</option>
+        </select>
+        <button class="button button-primary" id="start-quiz">Start quick assessment <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section class="card hidden" id="quiz-card">
+        <div class="step-label"><span>02</span> KNOWLEDGE CHECK</div>
+        <div class="quiz-meta"><span id="cluster-label"></span><span id="difficulty-label"></span></div>
+        <h3 id="question-text"></h3>
+        <form id="answer-form"><div id="answer-options" class="answer-options"></div>
+          <button class="button button-primary" type="submit">Check answer <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="feedback" id="answer-feedback" role="status"></p>
+      </section>
+
+      <section class="card hidden" id="goal-card">
+        <div class="step-label"><span>03</span> MAKE IT YOURS</div>
+        <p class="mastery-note" id="mastery-summary"></p>
+        <label for="goal">What are you working toward?</label>
+        <textarea id="goal" maxlength="500" rows="3" placeholder="e.g. Prepare for a Python internship interview"></textarea>
+        <div class="field-row">
+          <div class="field-grow"><label for="budget">Available learning hours</label><input id="budget" type="number" min="1" max="1000" value="20"></div>
+          <div class="field-grow"><label for="weeks">Timeframe <span class="optional">optional</span></label><input id="weeks" type="number" min="1" max="52" placeholder="4 weeks"></div>
+        </div>
+        <button class="button button-primary" id="generate-pathway">Create my pathway <span aria-hidden="true">→</span></button>
+      </section>
+
+      <div id="status-message" class="status-message" role="status"></div>
+      <section class="hidden" id="roadmap-section">
+        <div class="roadmap-heading"><div><p class="eyebrow">YOUR ROADMAP</p><h2 id="roadmap-title"></h2></div><div class="total-hours" id="total-hours"></div></div>
+        <div id="phase-list" class="phase-list"></div>
+        <details class="transparency-panel" open>
+          <summary>How this was generated</summary>
+          <div id="generation-metadata"></div>
+        </details>
+        <button class="button button-secondary" id="adjust-pathway">Adjust goal or time</button>
+        <button class="button button-secondary" id="start-over">Start a new pathway</button>
+      </section>
+    </section>
+  </main>
+  <footer>Built with a curated knowledge graph · Runs locally on CPU</footer>
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

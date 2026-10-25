@@ -44,3 +44,8 @@
 - **Decision:** Rank curated topic/resource documents with MiniLM embeddings cached by subject/content/model; if model loading or encoding fails, use deterministic lexical scoring over the same records.
 - **Alternatives:** Require network-backed search; fail pathway generation when embeddings are absent; retrieve from arbitrary URLs.
 - **Why:** Grounding stays bounded to reviewed data while the demo and tests remain usable offline and on CPU-only systems.
+
+## 0010 — Keep Flask thin and persist validated outputs in SQLite
+- **Decision:** Use a Flask factory to wire isolated services, Pydantic API request schemas, and a small `sqlite3` repository for pathway JSON and provenance.
+- **Alternatives:** Put domain behavior in routes; keep pathways only in memory; add a remote database or ORM before the data model requires it.
+- **Why:** The app is easy to test with Flask's client, saved IDs survive process restarts, and the local deployment has no database service to configure.
