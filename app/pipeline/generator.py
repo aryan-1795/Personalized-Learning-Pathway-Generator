@@ -13,6 +13,7 @@ from pydantic import ValidationError
 from app.knowledge.loader import Resource, load_resources, load_topic_graph
 from app.llm.prompts import render_prompt
 from app.llm.providers import LLMProvider
+from app.observability.events import emit_event, estimate_tokens
 from app.pipeline.context import build_context, sanitize_goal
 from app.pipeline.schemas import (
     Checkpoint,
@@ -219,12 +220,25 @@ class PathwayGenerator:
         if key in self._cache:
             cached = self._cache.pop(key)
             self._cache[key] = cached
-            return cached.model_copy(
+            cache_result = cached.model_copy(
                 deep=True,
                 update={
                     "metadata": cached.metadata.model_copy(deep=True, update={"cache_hit": True})
                 },
             )
+            emit_event(
+                "pathway_generation",
+                prompt_version=self.prompt_version,
+                model=self.provider.model_name,
+                input_tokens_estimated=0,
+                output_tokens_estimated=0,
+                latency_ms=0,
+                validation_outcome=cache_result.metadata.source,
+                retries=0,
+                source=cache_result.metadata.source,
+                cache_hit=True,
+            )
+            return cache_result
 
         started = time.perf_counter()
         context = build_context(
@@ -239,6 +253,8 @@ class PathwayGenerator:
         first_try_schema_valid = False
         first_try_semantic_valid = False
         first_try_validation_errors: list[str] = []
+        input_tokens_estimated = 0
+        output_tokens_estimated = 0
         source = "fallback"
         result_pathway: Pathway | None = None
         retries_used = 0
@@ -252,6 +268,9 @@ class PathwayGenerator:
                     + "\nReturn the complete corrected JSON object only."
                 )
             try:
+                call_started = time.perf_counter()
+                prompt_tokens = estimate_tokens(prompt)
+                input_tokens_estimated += prompt_tokens
                 output = self.provider.generate(
                     [{"role": "user", "content": prompt}],
                     Pathway,
@@ -262,7 +281,19 @@ class PathwayGenerator:
                 validation_errors.append(f"provider error: {type(exc).__name__}: {exc}")
                 if attempt == 0:
                     first_try_validation_errors = list(validation_errors)
+                emit_event(
+                    "llm_call",
+                    prompt_version=self.prompt_version,
+                    model=self.provider.model_name,
+                    input_tokens_estimated=prompt_tokens,
+                    output_tokens_estimated=0,
+                    latency_ms=round((time.perf_counter() - call_started) * 1000, 3),
+                    validation_outcome="provider_error",
+                    retries=attempt,
+                )
                 break
+            output_tokens = estimate_tokens(output)
+            output_tokens_estimated += output_tokens
             try:
                 candidate = Pathway.model_validate_json(output)
             except ValidationError as exc:
@@ -273,6 +304,16 @@ class PathwayGenerator:
                 if attempt == 0:
                     first_try_validation_errors = list(validation_errors)
                 retries_used = min(attempt + 1, self.max_retries)
+                emit_event(
+                    "llm_call",
+                    prompt_version=self.prompt_version,
+                    model=self.provider.model_name,
+                    input_tokens_estimated=prompt_tokens,
+                    output_tokens_estimated=output_tokens,
+                    latency_ms=round((time.perf_counter() - call_started) * 1000, 3),
+                    validation_outcome="schema_invalid",
+                    retries=attempt,
+                )
                 continue
             if attempt == 0:
                 first_try_schema_valid = True
@@ -286,10 +327,30 @@ class PathwayGenerator:
             if errors:
                 validation_errors = errors
                 retries_used = min(attempt + 1, self.max_retries)
+                emit_event(
+                    "llm_call",
+                    prompt_version=self.prompt_version,
+                    model=self.provider.model_name,
+                    input_tokens_estimated=prompt_tokens,
+                    output_tokens_estimated=output_tokens,
+                    latency_ms=round((time.perf_counter() - call_started) * 1000, 3),
+                    validation_outcome="semantic_invalid",
+                    retries=attempt,
+                )
                 continue
             result_pathway = candidate
             source = "llm_ok" if attempt == 0 else "llm_repaired"
             retries_used = attempt
+            emit_event(
+                "llm_call",
+                prompt_version=self.prompt_version,
+                model=self.provider.model_name,
+                input_tokens_estimated=prompt_tokens,
+                output_tokens_estimated=output_tokens,
+                latency_ms=round((time.perf_counter() - call_started) * 1000, 3),
+                validation_outcome="accepted",
+                retries=attempt,
+            )
             break
 
         if result_pathway is None:
@@ -314,7 +375,20 @@ class PathwayGenerator:
                 first_try_schema_valid=first_try_schema_valid,
                 first_try_semantic_valid=first_try_semantic_valid,
                 first_try_validation_errors=first_try_validation_errors,
+                input_tokens_estimated=input_tokens_estimated,
+                output_tokens_estimated=output_tokens_estimated,
             ),
+        )
+        emit_event(
+            "pathway_generation",
+            prompt_version=self.prompt_version,
+            model=self.provider.model_name,
+            input_tokens_estimated=input_tokens_estimated,
+            output_tokens_estimated=output_tokens_estimated,
+            latency_ms=round(elapsed, 3),
+            validation_outcome=source,
+            retries=retries_used,
+            source=source,
         )
         self._cache[key] = result
         if len(self._cache) > CACHE_LIMIT:

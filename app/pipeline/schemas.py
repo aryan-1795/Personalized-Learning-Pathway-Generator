@@ -75,6 +75,8 @@ class GenerationMetadata(BaseModel):
     first_try_schema_valid: bool = False
     first_try_semantic_valid: bool = False
     first_try_validation_errors: list[str] = Field(default_factory=list)
+    input_tokens_estimated: int = Field(default=0, ge=0)
+    output_tokens_estimated: int = Field(default=0, ge=0)
 
 
 class PathwayResult(BaseModel):

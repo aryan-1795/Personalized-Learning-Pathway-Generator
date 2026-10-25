@@ -193,6 +193,8 @@ def test_pipeline_success_returns_llm_metadata_and_valid_pathway() -> None:
     result = PathwayGenerator(provider).generate_pathway(request())
     assert result.metadata.source == "llm_ok"
     assert result.metadata.retries == 0
+    assert result.metadata.input_tokens_estimated > 0
+    assert result.metadata.output_tokens_estimated > 0
     assert validate_pathway(result.pathway, {}, 8) == []
 
 

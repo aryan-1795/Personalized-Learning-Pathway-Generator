@@ -49,3 +49,8 @@
 - **Decision:** Use a Flask factory to wire isolated services, Pydantic API request schemas, and a small `sqlite3` repository for pathway JSON and provenance.
 - **Alternatives:** Put domain behavior in routes; keep pathways only in memory; add a remote database or ORM before the data model requires it.
 - **Why:** The app is easy to test with Flask's client, saved IDs survive process restarts, and the local deployment has no database service to configure.
+
+## 0011 — Log request and model events as JSON without learner text
+- **Decision:** Emit request lifecycle and per-generation JSON events with a validated request ID, prompt/model provenance, estimated token counts, latency, validation outcome, retries, and cache status. Bound request bodies and goal length.
+- **Alternatives:** Log free-form messages including learner prompts; rely on unstructured Flask logs; accept unbounded client input.
+- **Why:** Structured events are reviewable in a demo and help diagnose validation behavior while avoiding unnecessary learner-text exposure.
