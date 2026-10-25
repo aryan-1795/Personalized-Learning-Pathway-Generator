@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from app.llm.prompts import load_prompt, render_prompt
-from app.llm.providers import MockProvider
+from app.llm.providers import HFLocalProvider, MockProvider
 from pydantic import BaseModel
 
 
@@ -51,3 +51,20 @@ def test_unknown_prompt_version_is_rejected() -> None:
         assert "Unsupported" in str(exc)
     else:
         raise AssertionError("Unknown prompt version should not load")
+
+
+def test_hf_provider_extracts_assistant_content_from_chat_output() -> None:
+    class FakePipeline:
+        def __call__(self, messages, **params):
+            assert messages[0]["role"] == "system"
+            return [{"generated_text": [{"role": "assistant", "content": '{"answer":"ok"}'}]}]
+
+    model_name = "test-model-chat-output"
+    HFLocalProvider._pipelines[model_name] = FakePipeline()
+    try:
+        result = HFLocalProvider(model_name).generate(
+            [{"role": "user", "content": "hello"}], ExampleSchema
+        )
+    finally:
+        HFLocalProvider._pipelines.pop(model_name, None)
+    assert result == '{"answer":"ok"}'

@@ -27,7 +27,8 @@ class PromptContext:
 def sanitize_goal(goal: str, max_length: int = 500) -> str:
     """Normalize free text, remove control characters, and enforce a hard bound."""
     normalized = " ".join("".join(c if c.isprintable() else " " for c in goal).split())
-    return normalized[:max_length]
+    bounded = normalized[:max_length]
+    return bounded.replace("<", "&lt;").replace(">", "&gt;")
 
 
 def _score_topic(topic: Topic, goal_words: set[str], mastery: dict[str, float]) -> float:

@@ -11,6 +11,11 @@ requires-python = ">=3.11"
 [tool.setuptools.packages.find]
 include = ["app*"]
 
+[tool.setuptools.package-data]
+"app.knowledge" = ["*.json"]
+"app.llm" = ["prompts/*.md"]
+"app.eval" = ["profiles.json"]
+
 [tool.ruff]
 target-version = "py311"
 line-length = 100

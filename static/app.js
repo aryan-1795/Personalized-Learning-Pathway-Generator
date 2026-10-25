@@ -127,7 +127,7 @@ function renderPathway(result) {
           anchor.href = resource.url;
           anchor.target = "_blank";
           anchor.rel = "noopener noreferrer";
-          anchor.textContent = resource.title;
+          anchor.textContent = resource.verified ? resource.title : `${resource.title} (unverified)`;
           li.append(anchor);
           links.append(li);
         });
@@ -147,7 +147,7 @@ function renderPathway(result) {
   const grid = document.createElement("div");
   grid.className = "metadata-grid";
   const sourceLabel = { llm_ok: "LLM generated", llm_repaired: "LLM repaired", fallback: "Algorithmic fallback" }[metadata.source] || metadata.source;
-  [["Source", sourceLabel], ["Prompt", metadata.prompt_version], ["Model", metadata.model], ["Latency", `${metadata.latency_ms} ms`], ["Retries", String(metadata.retries)], ["Cache", metadata.cache_hit ? "Hit" : "Miss"]].forEach(([label, value]) => {
+  [["Source", sourceLabel], ["Validation", metadata.final_validation_passed ? "Passed" : "Failed"], ["Prompt", metadata.prompt_version], ["Model", metadata.model], ["Latency", `${metadata.latency_ms} ms`], ["Retries", String(metadata.retries)], ["Cache", metadata.cache_hit ? "Hit" : "Miss"]].forEach(([label, value]) => {
     const cell = document.createElement("div");
     cell.className = "metadata-item";
     appendText(cell, "strong", "", label);

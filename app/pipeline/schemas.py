@@ -9,7 +9,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 from app.knowledge.loader import Subject
 
 
-class PathwayResource(BaseModel):
+class Resource(BaseModel):
     """A resource copied from the reviewed catalog."""
 
     model_config = ConfigDict(extra="forbid", frozen=True)
@@ -17,6 +17,10 @@ class PathwayResource(BaseModel):
     title: str = Field(min_length=1)
     url: str = Field(pattern=r"^https://")
     type: str = Field(min_length=1)
+    verified: bool = True
+
+
+PathwayResource = Resource
 
 
 class Checkpoint(BaseModel):
@@ -77,6 +81,7 @@ class GenerationMetadata(BaseModel):
     first_try_validation_errors: list[str] = Field(default_factory=list)
     input_tokens_estimated: int = Field(default=0, ge=0)
     output_tokens_estimated: int = Field(default=0, ge=0)
+    final_validation_passed: bool = False
 
 
 class PathwayResult(BaseModel):

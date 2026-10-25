@@ -26,28 +26,28 @@ class LLMProvider(ABC):
 class HFLocalProvider(LLMProvider):
     """Run a Transformers text-generation pipeline with lazy singleton loading."""
 
-    _pipeline: Any = None
+    _pipelines: dict[str, Any] = {}
     _load_lock = Lock()
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct") -> None:
         self.model_name = model_name
 
     def _get_pipeline(self) -> Any:
-        if self.__class__._pipeline is None:
+        if self.model_name not in self.__class__._pipelines:
             with self.__class__._load_lock:
-                if self.__class__._pipeline is None:
+                if self.model_name not in self.__class__._pipelines:
                     try:
                         from transformers import pipeline
                     except ImportError as exc:
                         raise RuntimeError(
                             "Install the local inference dependencies to use HFLocalProvider"
                         ) from exc
-                    self.__class__._pipeline = pipeline(
+                    self.__class__._pipelines[self.model_name] = pipeline(
                         "text-generation",
                         model=self.model_name,
-                        device_map="cpu",
+                        device=-1,
                     )
-        return self.__class__._pipeline
+        return self.__class__._pipelines[self.model_name]
 
     def generate(
         self,
@@ -70,7 +70,14 @@ class HFLocalProvider(LLMProvider):
             do_sample=params.get("do_sample", False),
             return_full_text=False,
         )
-        return str(result[0]["generated_text"])
+        generated = result[0]["generated_text"]
+        if isinstance(generated, list):
+            generated = next(
+                (message.get("content", "") for message in reversed(generated)
+                 if isinstance(message, dict) and message.get("role") == "assistant"),
+                "",
+            )
+        return str(generated)
 
 
 class MockProvider(LLMProvider):

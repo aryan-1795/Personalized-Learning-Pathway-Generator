@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
@@ -14,7 +15,9 @@ from pydantic import BaseModel, ConfigDict
 from app.knowledge.loader import Resource, Subject, Topic, load_resources, load_topic_graph
 
 LOGGER = logging.getLogger(__name__)
-DEFAULT_EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_EMBEDDING_MODEL = os.getenv(
+    "EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2"
+)
 DEFAULT_CACHE_DIR = Path(__file__).resolve().parents[2] / ".cache" / "embeddings"
 
 

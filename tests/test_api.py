@@ -87,6 +87,7 @@ def test_pathway_generation_persists_and_can_be_retrieved(client) -> None:
     assert generated.status_code == 200
     body = generated.get_json()
     assert body["metadata"]["source"] == "fallback"
+    assert body["metadata"]["final_validation_passed"] is True
     assert body["pathway"]["subject"] == "python"
     retrieved = client.get(f"/api/pathway/{body['id']}")
     assert retrieved.status_code == 200

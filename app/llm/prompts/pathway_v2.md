@@ -18,9 +18,9 @@ You are an evidence-grounded curriculum planner. Sequence a learner's next steps
 </untrusted_goal>
 
 # Output contract
-Return `subject`, `goal`, `phases`, and `total_hours`. Every step uses `topic_id`, `rationale`, `hours`, `practice_task`, `resources`, and `review`. A resource has only `title`, `url`, and `type`. A checkpoint has `title` and `criteria`. Step hours must sum to the pathway total.
+Return `subject`, `goal`, `phases`, and `total_hours`. Every step uses `topic_id`, `rationale`, `hours`, `practice_task`, `resources`, and `review`. A resource has `title`, `url`, `type`, and `verified`, copied from the catalog. A checkpoint has `title` and `criteria`. Step hours must sum to the pathway total.
 
 # Few-shot example
 Context: {"subject":"web_development","topics":[{"id":"http-requests-and-apis","name":"HTTP requests and APIs","prerequisites":[],"estimated_hours":3}],"resources":[{"title":"HTTP requests and APIs — official learning reference","url":"https://developer.mozilla.org/en-US/docs/Learn","type":"documentation","topic_id":"http-requests-and-apis","verified":true}],"mastery":{"http-requests-and-apis":0.2},"budget_hours":3}
 Goal: understand API requests
-Output: {"subject":"web_development","goal":"understand API requests","phases":[{"title":"Request foundations","steps":[{"topic_id":"http-requests-and-apis","rationale":"HTTP is the basis for API requests.","hours":3,"practice_task":"Inspect request and response headers.","resources":[{"title":"HTTP requests and APIs — official learning reference","url":"https://developer.mozilla.org/en-US/docs/Learn","type":"documentation"}],"review":false}],"checkpoint":{"title":"Checkpoint","criteria":"Explain a request and response."}}],"total_hours":3}
+Output: {"subject":"web_development","goal":"understand API requests","phases":[{"title":"Request foundations","steps":[{"topic_id":"http-requests-and-apis","rationale":"HTTP is the basis for API requests.","hours":3,"practice_task":"Inspect request and response headers.","resources":[{"title":"HTTP requests and APIs — official learning reference","url":"https://developer.mozilla.org/en-US/docs/Learn","type":"documentation","verified":true}],"review":false}],"checkpoint":{"title":"Checkpoint","criteria":"Explain a request and response."}}],"total_hours":3}

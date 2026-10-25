@@ -11,7 +11,7 @@ from typing import Any
 
 from app.knowledge.loader import load_resources, load_topic_graph
 from app.llm.providers import HFLocalProvider, LLMProvider, MockProvider
-from app.pipeline.generator import PathwayGenerator
+from app.pipeline.generator import PathwayGenerator, validate_pathway
 from app.pipeline.schemas import (
     Checkpoint,
     Pathway,
@@ -46,7 +46,12 @@ def _valid_fixture_output(request: PathwayInput) -> str:
     step_resources = []
     if resource:
         step_resources.append(
-            PathwayResource(title=resource.title, url=resource.url, type=resource.type)
+            PathwayResource(
+                title=resource.title,
+                url=resource.url,
+                type=resource.type,
+                verified=resource.verified,
+            )
         )
     hours = min(first_topic.estimated_hours, request.budget_hours)
     pathway = Pathway(
@@ -100,10 +105,14 @@ def _run_comparison(
 ) -> dict[str, Any]:
     outcomes: list[dict[str, Any]] = []
     schema_valid: list[bool] = []
+    first_semantic_valid: list[bool] = []
     repaired = 0
     fallback = 0
     prerequisite_violation = 0
     hallucination = 0
+    final_prerequisite_violation = 0
+    final_hallucination = 0
+    final_semantic_valid_count = 0
     compliant = 0
     total_latency = 0.0
     for index, profile in enumerate(profiles):
@@ -121,11 +130,19 @@ def _run_comparison(
         metadata = result.metadata
         errors = metadata.first_try_validation_errors
         schema_valid.append(metadata.first_try_schema_valid)
+        first_semantic_valid.append(metadata.first_try_semantic_valid)
         repaired += metadata.source == "llm_repaired"
         fallback += metadata.source == "fallback"
         prerequisite_violation += any("prerequisite" in error for error in errors)
         hallucination += any(
             "unknown topic" in error or "not cataloged" in error for error in errors
+        )
+        final_errors = validate_pathway(result.pathway, request.mastery, request.budget_hours)
+        final_semantic_valid = not final_errors
+        final_semantic_valid_count += final_semantic_valid
+        final_prerequisite_violation += any("prerequisite" in error for error in final_errors)
+        final_hallucination += any(
+            "unknown topic" in error or "not cataloged" in error for error in final_errors
         )
         profile_compliant = (
             result.pathway.total_hours <= request.budget_hours
@@ -145,6 +162,7 @@ def _run_comparison(
                 "first_try_schema_valid": metadata.first_try_schema_valid,
                 "first_try_semantic_valid": metadata.first_try_semantic_valid,
                 "first_try_validation_errors": errors,
+                "final_semantic_valid": final_semantic_valid,
                 "retries": metadata.retries,
                 "latency_ms": metadata.latency_ms,
                 "time_budget_compliant": profile_compliant,
@@ -157,12 +175,18 @@ def _run_comparison(
         "profile_count": count,
         "metrics": {
             "schema_validity_rate_first_try": round(sum(schema_valid) / count, 4),
+            "semantic_validity_rate_first_try": round(sum(first_semantic_valid) / count, 4),
             "repair_rate": round(repaired / count, 4),
             "fallback_rate": round(fallback / count, 4),
             "prerequisite_order_violation_rate_first_try": round(
                 prerequisite_violation / count, 4
             ),
             "hallucinated_topic_or_url_rate_first_try": round(hallucination / count, 4),
+            "final_semantic_validity_rate": round(final_semantic_valid_count / count, 4),
+            "final_prerequisite_order_violation_rate": round(
+                final_prerequisite_violation / count, 4
+            ),
+            "final_hallucinated_topic_or_url_rate": round(final_hallucination / count, 4),
             "time_budget_compliance_rate_final": round(compliant / count, 4),
             "mean_latency_ms": round(total_latency / count, 3),
         },
@@ -174,10 +198,14 @@ def render_markdown(results: list[dict[str, Any]]) -> str:
     """Render comparison metrics as a compact Markdown table."""
     columns = [
         ("schema_validity_rate_first_try", "Schema valid"),
+        ("semantic_validity_rate_first_try", "Semantic valid"),
         ("repair_rate", "Repair"),
         ("fallback_rate", "Fallback"),
         ("prerequisite_order_violation_rate_first_try", "Prereq violations"),
         ("hallucinated_topic_or_url_rate_first_try", "Hallucinations"),
+        ("final_semantic_validity_rate", "Final valid"),
+        ("final_prerequisite_order_violation_rate", "Final prereq violations"),
+        ("final_hallucinated_topic_or_url_rate", "Final hallucinations"),
         ("time_budget_compliance_rate_final", "Budget compliant"),
         ("mean_latency_ms", "Mean latency ms"),
     ]
@@ -189,8 +217,7 @@ def render_markdown(results: list[dict[str, Any]]) -> str:
         metric_values = [result["metrics"][key] for key, _ in columns]
         formatted = []
         for (key, _), value in zip(columns, metric_values, strict=True):
-            is_rate = key.endswith("rate_first_try") or key.endswith("rate_final")
-            is_rate = is_rate or key in {"repair_rate", "fallback_rate"}
+            is_rate = "_rate" in key
             formatted.append(f"{value * 100:.1f}%" if is_rate else str(value))
         lines.append(
             f"| {result['provider']} / {result['prompt_version']} | "

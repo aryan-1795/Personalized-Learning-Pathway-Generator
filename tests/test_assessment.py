@@ -1,7 +1,12 @@
 from __future__ import annotations
 
 import pytest
-from app.assessment.engine import AssessmentEngine, load_question_bank
+from app.assessment.engine import (
+    AssessLevelInput,
+    AssessmentEngine,
+    assess_level,
+    load_question_bank,
+)
 from app.knowledge.loader import load_topic_graph
 
 
@@ -67,6 +72,30 @@ def test_rejects_wrong_active_question_and_out_of_range_answer() -> None:
 def test_unknown_assessment_session_is_rejected() -> None:
     with pytest.raises(KeyError, match="not found"):
         AssessmentEngine().answer("missing", "q", 0)
+
+
+def test_assess_level_tool_returns_full_typed_report() -> None:
+    report = assess_level(AssessLevelInput(subject="python", mastery={}, questions_answered=0))
+    assert report.overall_level == "intermediate"
+    assert len(report.mastery) == len(load_topic_graph("python").topics)
+    assert set(report.mastery.values()) == {0.5}
+
+
+def test_assess_level_rejects_unknown_or_out_of_range_mastery() -> None:
+    with pytest.raises(ValueError, match="unknown topic"):
+        assess_level(
+            AssessLevelInput(
+                subject="python", mastery={"not-real": 0.5}, questions_answered=1
+            )
+        )
+    with pytest.raises(ValueError, match="between 0 and 1"):
+        assess_level(
+            AssessLevelInput(
+                subject="python",
+                mastery={"variables-and-basic-types": 2},
+                questions_answered=1,
+            )
+        )
 
 
 def test_maximum_question_cap_stops_session() -> None:

@@ -58,6 +58,38 @@ class AssessmentReport(BaseModel):
     questions_answered: int
 
 
+class AssessLevelInput(BaseModel):
+    """Agent-facing input for converting a mastery vector into an overall level."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    subject: Subject
+    mastery: dict[str, float]
+    questions_answered: int = Field(ge=0)
+
+
+def assess_level(payload: AssessLevelInput) -> AssessmentReport:
+    """Return a typed level report from validated per-topic mastery estimates."""
+    graph = load_topic_graph(payload.subject)
+    by_id = graph.by_id()
+    unknown = set(payload.mastery) - by_id.keys()
+    if unknown:
+        raise ValueError(f"Mastery contains unknown topic IDs: {sorted(unknown)}")
+    mastery = {
+        topic.id: payload.mastery.get(topic.id, 0.5) for topic in graph.topics
+    }
+    if any(not 0 <= score <= 1 for score in mastery.values()):
+        raise ValueError("mastery values must be between 0 and 1")
+    average = sum(mastery.values()) / len(mastery)
+    level = "beginner" if average < 0.4 else "intermediate" if average < 0.75 else "advanced"
+    return AssessmentReport(
+        subject=payload.subject,
+        mastery={topic_id: round(score, 3) for topic_id, score in mastery.items()},
+        overall_level=level,
+        questions_answered=payload.questions_answered,
+    )
+
+
 class AssessmentStep(BaseModel):
     """One adaptive assessment response containing another item or final report."""
 
@@ -214,16 +246,10 @@ class AssessmentEngine:
             topic.id: round(cluster_mastery[topic_cluster.get(topic.id, clusters[0])], 3)
             for topic in load_topic_graph(session.subject).topics
         }
-        observed_mean = sum(cluster_mastery.values()) / len(cluster_mastery)
-        if observed_mean < 0.4:
-            level = "beginner"
-        elif observed_mean < 0.75:
-            level = "intermediate"
-        else:
-            level = "advanced"
-        return AssessmentReport(
-            subject=session.subject,
-            mastery=mastery,
-            overall_level=level,
-            questions_answered=len(session.answers),
+        return assess_level(
+            AssessLevelInput(
+                subject=session.subject,
+                mastery=mastery,
+                questions_answered=len(session.answers),
+            )
         )

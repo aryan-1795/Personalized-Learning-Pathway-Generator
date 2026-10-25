@@ -33,7 +33,7 @@ Add focused tests alongside every module or behavior change. Keep assessment, kn
 
 ## Agent rules
 - Read `docs/SPEC.md` and `docs/DECISIONS.md` before implementation; the spec is authoritative.
-- Work only on the active milestone and stop with a summary when it is complete.
+- Work through all milestones requested by the user; keep milestone commits separate and summarize when the requested sequence is complete. Stop after one milestone only when the user explicitly asks for a pause.
 - Update the spec and decision log when architecture, contracts, defaults, or algorithms change.
 - Write and run relevant tests before moving to the next milestone; do not hide failures.
 - Do not invent evaluation results. Label mock runs and real-model runs accurately.

@@ -69,6 +69,8 @@ def validate_pathway(
                 errors.append(f"resource {resource.url} is not cataloged for {step.topic_id}")
             elif resource_lookup[key].type != resource.type:
                 errors.append(f"resource type mismatch for {resource.url}")
+            elif resource_lookup[key].verified != resource.verified:
+                errors.append(f"resource verification flag mismatch for {resource.url}")
     summed_hours = sum(step.hours for step in flattened)
     if summed_hours > budget_hours + 1e-6:
         errors.append(f"planned hours {summed_hours:g} exceed budget {budget_hours:g}")
@@ -156,7 +158,12 @@ def _fallback_pathway(request: PathwayInput) -> Pathway:
         if not prerequisites_ready or topic.estimated_hours > remaining:
             continue
         resources = [
-            PathwayResource(title=item.title, url=item.url, type=item.type)
+            PathwayResource(
+                title=item.title,
+                url=item.url,
+                type=item.type,
+                verified=item.verified,
+            )
             for item in resources_by_topic.get(topic_id, [])[:1]
         ]
         steps.append(
@@ -377,6 +384,7 @@ class PathwayGenerator:
                 first_try_validation_errors=first_try_validation_errors,
                 input_tokens_estimated=input_tokens_estimated,
                 output_tokens_estimated=output_tokens_estimated,
+                final_validation_passed=True,
             ),
         )
         emit_event(

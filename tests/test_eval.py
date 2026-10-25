@@ -19,10 +19,13 @@ def test_mock_evaluation_measures_success_repair_fallback_and_safety_rates() -> 
     metrics = result["metrics"]
     assert result["profile_count"] == 20
     assert metrics["schema_validity_rate_first_try"] == 0.7
+    assert metrics["semantic_validity_rate_first_try"] == 0.6
     assert metrics["repair_rate"] == 0.2
     assert metrics["fallback_rate"] == 0.2
     assert metrics["prerequisite_order_violation_rate_first_try"] == 0.0
     assert metrics["hallucinated_topic_or_url_rate_first_try"] == 0.1
+    assert metrics["final_semantic_validity_rate"] == 1.0
+    assert metrics["final_hallucinated_topic_or_url_rate"] == 0.0
     assert metrics["time_budget_compliance_rate_final"] == 1.0
     assert metrics["mean_latency_ms"] > 0
 
