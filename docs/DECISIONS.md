@@ -29,3 +29,8 @@
 - **Decision:** Start at difficulty 3, step one level based on each answer, balance questions across four subject clusters, stop after eight questions with two observations per cluster or at twelve, and use a Beta(1,1) prior for mastery.
 - **Alternatives:** Fixed-length quizzes; report zero mastery for unasked topics; use a complex IRT model without calibrated item data.
 - **Why:** This is deterministic, explainable, and gives a usable estimate for every topic while clearly documenting that the initial quiz is diagnostic rather than psychometrically calibrated.
+
+## 0007 — Make local and mock inference share one provider contract
+- **Decision:** Keep `LLMProvider.generate` as the seam, load Transformers lazily for CPU inference, and replay queued outputs with a deterministic mock in tests.
+- **Alternatives:** Couple prompt/pipeline code to Transformers; call a paid hosted model; patch generation internals in each test.
+- **Why:** Provider substitution keeps orchestration testable and works without model downloads, network access, or paid credentials.
